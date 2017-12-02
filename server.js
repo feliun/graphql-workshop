@@ -64,6 +64,10 @@ const schema = new GraphQLSchema({
   query: new GraphQLObjectType({
     name: 'Query',
     fields: {
+      films: {
+        type: new GraphQLList(Film),
+        resolve: (root, args, context) => FILMS
+      },
       film: {
         type: Film,
         args: { filmId: { type: GraphQLInt } },
