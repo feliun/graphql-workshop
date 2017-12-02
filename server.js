@@ -8,6 +8,10 @@ const port = process.env.PORT || 8080;
 
 const app = express();
 
+// TODO make all hyperlinks from films/characters return data from the SW source
+// to do that, we need to abstract the concept of source
+// and make queries to controller agnostic of the data source
+
 const Film = new GraphQLObjectType({
   name: 'Film',
   description: 'A Star Wars film',
