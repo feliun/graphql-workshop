@@ -59,14 +59,14 @@ const schema = new GraphQLSchema({
     fields: {
       films: {
         type: new GraphQLList(Film),
-        resolve: (root, args, context) => FILMS
+        resolve: (root, args, context) => context.mongo.collection('films').find({}).toArray()
       },
       film: {
         type: Film,
         args: { filmId: { type: GraphQLInt } },
         resolve: (root, { filmId }, context) => {
           if (!filmId) throw new Error('A filmId needs to be provided to get a film!');
-          return FILMS.find((film) => film.episode_id === filmId);
+          return context.mongo.collection('films').findOne({ episode_id: filmId });
         },
       },
       character: {
@@ -74,7 +74,7 @@ const schema = new GraphQLSchema({
         args: { name: { type: GraphQLString } },
         resolve: (root, { name }, context) => {
           if (!name) throw new Error('A name needs to be provided to get a character!');
-          return CHARACTERS.find((character) => character.name === name);
+          return context.mongo.collection('characters').findOne({ name });
         },
       }
     }
@@ -83,23 +83,27 @@ const schema = new GraphQLSchema({
 
 
 const options = {
+  auth: {
+    user: process.env.MONGO_DB_APP_USERNAME || 'node',
+    password: process.env.MONGO_DB_APP_PASSWORD || 'node'
+  },
   keepAlive: true,
   reconnectTries: 30,
   socketTimeoutMS: 0
 };
 
-mongodb.connect('mongodb://127.0.0.1/starwars', options, (err, mongo) => {
-  if (err) throw err;
-  app.listen(port);
-  console.log('Connected to mongo DB!');
-  app.use(
-    '/graphql',
-    graphqlHTTP({
-      schema,
-      context: { mongo },
-      graphiql: true
-    })
-  );
-  console.log(`Server listening at localhost:${port}`);
-});
-
+mongodb.connect('mongodb://127.0.0.1/starwars', options)
+  .then((mongo) => {
+    app.listen(port);
+    console.log('Connected to mongo DB!');
+    app.use(
+      '/graphql',
+      graphqlHTTP({
+        schema,
+        context: { mongo },
+        graphiql: true
+      })
+    );
+    console.log(`Server listening at localhost:${port}`);
+  })
+  .catch(console.error);
