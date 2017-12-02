@@ -7,6 +7,8 @@ const port = process.env.PORT || 8080;
 
 const app = express();
 
+// TODO use a controller in the context instead to abstract away which database we are using
+
 const Film = new GraphQLObjectType({
   name: 'Film',
   description: 'A Star Wars film',
