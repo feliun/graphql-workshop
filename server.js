@@ -8,10 +8,6 @@ const port = process.env.PORT || 8080;
 
 const app = express();
 
-// TODO make all hyperlinks from films/characters return data from the SW source
-// to do that, we need to abstract the concept of source
-// and make queries to controller agnostic of the data source
-
 const Film = new GraphQLObjectType({
   name: 'Film',
   description: 'A Star Wars film',
@@ -64,14 +60,14 @@ const schema = new GraphQLSchema({
     fields: {
       films: {
         type: new GraphQLList(Film),
-        resolve: (root, args, context) => context.controller.getAllFilms()
+        resolve: (root, args, context) => context.controller.film.getAll()
       },
       film: {
         type: Film,
         args: { filmId: { type: GraphQLInt } },
         resolve: (root, { filmId }, context) => {
           if (!filmId) throw new Error('A filmId needs to be provided to get a film!');
-          return context.controller.getFilmById(filmId);
+          return context.controller.film.getById(filmId);
         },
       },
       character: {
@@ -79,7 +75,7 @@ const schema = new GraphQLSchema({
         args: { name: { type: GraphQLString } },
         resolve: (root, { name }, context) => {
           if (!name) throw new Error('A name needs to be provided to get a character!');
-          return context.controller.getCharacterByName(name);
+          return context.controller.character.getByName(name);
         },
       }
     }
