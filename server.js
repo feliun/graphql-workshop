@@ -2,12 +2,11 @@ const express = require('express');
 const graphqlHTTP = require('express-graphql');
 const mongodb = require('mongodb');
 const { GraphQLSchema, GraphQLObjectType, GraphQLString, GraphQLInt, GraphQLList } = require('graphql');
+const createController = require('./lib/controller');
 
 const port = process.env.PORT || 8080;
 
 const app = express();
-
-// TODO use a controller in the context instead to abstract away which database we are using
 
 const Film = new GraphQLObjectType({
   name: 'Film',
@@ -61,14 +60,14 @@ const schema = new GraphQLSchema({
     fields: {
       films: {
         type: new GraphQLList(Film),
-        resolve: (root, args, context) => context.mongo.collection('films').find({}).toArray()
+        resolve: (root, args, context) => context.controller.getAllFilms()
       },
       film: {
         type: Film,
         args: { filmId: { type: GraphQLInt } },
         resolve: (root, { filmId }, context) => {
           if (!filmId) throw new Error('A filmId needs to be provided to get a film!');
-          return context.mongo.collection('films').findOne({ episode_id: filmId });
+          return context.controller.getFilmById(filmId);
         },
       },
       character: {
@@ -76,13 +75,12 @@ const schema = new GraphQLSchema({
         args: { name: { type: GraphQLString } },
         resolve: (root, { name }, context) => {
           if (!name) throw new Error('A name needs to be provided to get a character!');
-          return context.mongo.collection('characters').findOne({ name });
+          return context.controller.getCharacterByName(name);
         },
       }
     }
   })
 });
-
 
 const options = {
   auth: {
@@ -98,11 +96,12 @@ mongodb.connect('mongodb://127.0.0.1/starwars', options)
   .then((mongo) => {
     app.listen(port);
     console.log('Connected to mongo DB!');
+    const controller = createController(mongo);
     app.use(
       '/graphql',
       graphqlHTTP({
         schema,
-        context: { mongo },
+        context: { controller },
         graphiql: true
       })
     );
