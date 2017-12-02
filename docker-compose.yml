@@ -1,0 +1,19 @@
+version: "2.1"
+services:
+  db:
+    build: ./mongo
+    image: feliun/graphql-workshop:mongo
+    volumes:
+      - ./database:/data # volume in host -> $(pwd)/database
+    environment:
+      - MONGO_DB_APP_PASSWORD=node
+      - MONGO_DB_APP_USERNAME=node
+      - MONGO_DB_APP_DATABASE=books
+    ports:
+      - "27017:27017"
+    healthcheck:
+      test: ["CMD", "echo", "show dbs", "|", "mongo"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    command: mongod --smallfiles

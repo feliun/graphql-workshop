@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "docker": "docker-compose --file docker-compose.yml up -d --force-recreate"
   },
   "author": "Felipe Polo <felipe.polo@gmail.com>",
   "license": "MIT",
