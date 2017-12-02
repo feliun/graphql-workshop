@@ -1,34 +1,22 @@
 const express = require('express');
 const graphqlHTTP = require('express-graphql');
-const { GraphQLSchema, GraphQLObjectType, GraphQLString } = require('graphql');
+const { GraphQLSchema, GraphQLObjectType } = require('graphql');
 
 const port = process.env.PORT || 8080;
 
 const app = express();
 
-const moto = 'May the force be with you';
-const motoAsObject = { moto };
+const FILMS = require('./mongo/films.json');
+const CHARACTERS = require('./mongo/characters.json');
 
-const schema = new GraphQLSchema({
-  query: new GraphQLObjectType({
-    name: 'Query',
-    fields: {
-      moto: {
-        type: GraphQLString,
-        resolve: () => moto
-      },
-      motoAsObject: {
-        type: new GraphQLObjectType({
-          name: 'motoAsObject',
-          fields: {
-            moto: { type: GraphQLString }
-          }
-        }),
-        resolve: () => motoAsObject
-      }
-    }
-  })
-});
+const Film = // ...
+const Character = // ...
+
+// TODO: define a schema with operations to
+// 1. get one film by id
+// 2. get a character by name
+// 3. Get all films
+const schema = // ...
 
 app.use(
   '/graphql',
