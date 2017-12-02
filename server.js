@@ -1,12 +1,11 @@
 const express = require('express');
 const graphqlHTTP = require('express-graphql');
+const mongodb = require('mongodb');
 const { GraphQLSchema, GraphQLObjectType, GraphQLString, GraphQLInt, GraphQLList } = require('graphql');
 
 const port = process.env.PORT || 8080;
 
 const app = express();
-
-// TODO include a mongo connection and change the source to stop reading from memory
 
 const Film = new GraphQLObjectType({
   name: 'Film',
@@ -82,13 +81,25 @@ const schema = new GraphQLSchema({
   })
 });
 
-app.use(
-  '/graphql',
-  graphqlHTTP({
-    schema,
-    graphiql: true
-  })
-);
 
-app.listen(port);
-console.log(`Server listening at localhost:${port}`);
+const options = {
+  keepAlive: true,
+  reconnectTries: 30,
+  socketTimeoutMS: 0
+};
+
+mongodb.connect('mongodb://127.0.0.1/starwars', options, (err, mongo) => {
+  if (err) throw err;
+  app.listen(port);
+  console.log('Connected to mongo DB!');
+  app.use(
+    '/graphql',
+    graphqlHTTP({
+      schema,
+      context: { mongo },
+      graphiql: true
+    })
+  );
+  console.log(`Server listening at localhost:${port}`);
+});
+
