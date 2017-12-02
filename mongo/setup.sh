@@ -9,4 +9,8 @@ mongo admin -u $MONGO_INITDB_ROOT_USERNAME -p $MONGO_INITDB_ROOT_PASSWORD --eval
 mongoimport -u $MONGO_DB_APP_USERNAME -p $MONGO_DB_APP_PASSWORD --db $MONGO_DB_APP_DATABASE --collection courses --type json --file /courses.json --jsonArray
 mongoimport -u $MONGO_DB_APP_USERNAME -p $MONGO_DB_APP_PASSWORD --db $MONGO_DB_APP_DATABASE --collection students --type json --file /students.json --jsonArray
 
+# Creating indexes
+mongo $MONGO_DB_APP_DATABASE -u $MONGO_DB_APP_USERNAME -p $MONGO_DB_APP_PASSWORD --eval "db.courses.createIndex({ id: 1 }, { unique: true });"
+mongo $MONGO_DB_APP_DATABASE -u $MONGO_DB_APP_USERNAME -p $MONGO_DB_APP_PASSWORD --eval "db.students.createIndex({ id: 1 }, { unique: true });"
+
 echo "Mongo db and users created."
