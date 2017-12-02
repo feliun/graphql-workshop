@@ -6,8 +6,7 @@ const port = process.env.PORT || 8080;
 
 const app = express();
 
-const FILMS = require('./mongo/films.json');
-const CHARACTERS = require('./mongo/characters.json');
+// TODO include a mongo connection and change the source to stop reading from memory
 
 const Film = new GraphQLObjectType({
   name: 'Film',
@@ -54,11 +53,6 @@ const Character = new GraphQLObjectType({
     desc: { type: new GraphQLList(GraphQLString) }
   }
 });
-
-// TODO: define a schema with operations to
-// 1. get one film by id
-// 2. get a character by name
-// 3. Get all films
 
 const schema = new GraphQLSchema({
   query: new GraphQLObjectType({
