@@ -1,0 +1,2095 @@
+[
+  {
+    "name": "Luke Skywalker",
+    "height": "172",
+    "mass": "77",
+    "hair_color": "blond",
+    "skin_color": "fair",
+    "eye_color": "blue",
+    "birth_year": "19BBY",
+    "gender": "male",
+    "homeworld": "http://swapi.co/api/planets/1/",
+    "films": [
+      "http://swapi.co/api/films/6/",
+      "http://swapi.co/api/films/3/",
+      "http://swapi.co/api/films/2/",
+      "http://swapi.co/api/films/1/",
+      "http://swapi.co/api/films/7/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/1/"
+    ],
+    "vehicles": [
+      "http://swapi.co/api/vehicles/14/",
+      "http://swapi.co/api/vehicles/30/"
+    ],
+    "starships": [
+      "http://swapi.co/api/starships/12/",
+      "http://swapi.co/api/starships/22/"
+    ],
+    "created": "2014-12-09T13:50:51.644000Z",
+    "edited": "2014-12-20T21:17:56.891000Z",
+    "url": "http://swapi.co/api/people/1/",
+    "desc": [
+      "Luke Skywalker is a fictional character and the main protagonist of the original film trilogy of the Star Wars franchise created by George Lucas. The character, portrayed by Mark Hamill, is an important figure in the Rebel Alliance's struggle against the Galactic Empire. He is the twin brother of Rebellion leader Princess Leia Organa of Alderaan, a friend and brother-in-law of smuggler Han Solo, an apprentice to Jedi Masters Obi-Wan \"Ben\" Kenobi and Yoda, the son of fallen Jedi Anakin Skywalker (Darth Vader) and Queen of Naboo/Republic Senator Padmé Amidala and maternal uncle of Kylo Ren / Ben Solo. The now non-canon Star Wars expanded universe depicts him as a powerful Jedi Master, husband of Mara Jade, the father of Ben Skywalker and maternal uncle of Jaina, Jacen and Anakin Solo.",
+      "In 2015, the character was selected by Empire magazine as the 50th greatest movie character of all time.[2] On their list of the 100 Greatest Fictional Characters, Fandomania.com ranked the character at number 14.[3]"
+    ]
+  },
+  {
+    "name": "Obi-Wan Kenobi",
+    "height": "182",
+    "mass": "77",
+    "hair_color": "auburn, white",
+    "skin_color": "fair",
+    "eye_color": "blue-gray",
+    "birth_year": "57BBY",
+    "gender": "male",
+    "homeworld": "http://swapi.co/api/planets/20/",
+    "films": [
+      "http://swapi.co/api/films/5/",
+      "http://swapi.co/api/films/4/",
+      "http://swapi.co/api/films/6/",
+      "http://swapi.co/api/films/3/",
+      "http://swapi.co/api/films/2/",
+      "http://swapi.co/api/films/1/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/1/"
+    ],
+    "vehicles": [
+      "http://swapi.co/api/vehicles/38/"
+    ],
+    "starships": [
+      "http://swapi.co/api/starships/48/",
+      "http://swapi.co/api/starships/59/",
+      "http://swapi.co/api/starships/64/",
+      "http://swapi.co/api/starships/65/",
+      "http://swapi.co/api/starships/74/"
+    ],
+    "created": "2014-12-10T16:16:29.192000Z",
+    "edited": "2014-12-20T21:17:50.325000Z",
+    "url": "http://swapi.co/api/people/10/",
+    "desc": [
+      "Obi-Wan \"Ben\" Kenobi is a fictional character in the Star Wars franchise. Within the original trilogy he is portrayed by Sir Alec Guinness, while in the prequel trilogy a younger version of the character is portrayed by Ewan McGregor. In the original trilogy, he is a mentor to Luke Skywalker, to whom he introduces the ways of the Jedi. In the prequel trilogy, he is a master and friend to Anakin Skywalker. He is frequently featured as a main character in various other Star Wars media.",
+      "Sir Alec Guinness's portrayal of Obi-Wan in the original Star Wars (1977) remains the only time an actor has received an Oscar nomination (Best Supporting Actor) for acting in a Star Wars film."
+    ]
+  },
+  {
+    "name": "Anakin Skywalker",
+    "height": "188",
+    "mass": "84",
+    "hair_color": "blond",
+    "skin_color": "fair",
+    "eye_color": "blue",
+    "birth_year": "41.9BBY",
+    "gender": "male",
+    "homeworld": "http://swapi.co/api/planets/1/",
+    "films": [
+      "http://swapi.co/api/films/5/",
+      "http://swapi.co/api/films/4/",
+      "http://swapi.co/api/films/6/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/1/"
+    ],
+    "vehicles": [
+      "http://swapi.co/api/vehicles/44/",
+      "http://swapi.co/api/vehicles/46/"
+    ],
+    "starships": [
+      "http://swapi.co/api/starships/59/",
+      "http://swapi.co/api/starships/65/",
+      "http://swapi.co/api/starships/39/"
+    ],
+    "created": "2014-12-10T16:20:44.310000Z",
+    "edited": "2014-12-20T21:17:50.327000Z",
+    "url": "http://swapi.co/api/people/11/",
+    "desc": [
+      "Darth Vader, also known by his birth name Anakin Skywalker, is a fictional character in the Star Wars franchise.[1][2][3] Vader appears in the original film trilogy as a pivotal antagonist whose actions drive the plot, while his past as Anakin Skywalker and the story of his corruption are central to the narrative of the prequel trilogy.",
+      "The character was created by George Lucas and has been portrayed by numerous actors. His appearances span the first six Star Wars films, as well as Rogue One, and his character is heavily referenced in Star Wars: The Force Awakens. He is also an important character in the Star Wars expanded universe of television series, video games, novels, literature and comic books. Originally a Jedi prophesied to bring balance to the Force, he falls to the dark side of the Force and serves the evil Galactic Empire at the right hand of his Sith master, Emperor Palpatine (also known as Darth Sidious).[4] He is also the father of Luke Skywalker and Princess Leia Organa, secret husband of Padmé Amidala and grandfather of Kylo Ren.",
+      "Darth Vader has become one of the most iconic villains in popular culture, and has been listed among the greatest villains and fictional characters ever.[5][6] The American Film Institute listed him as the third greatest movie villain in cinema history on 100 Years... 100 Heroes and Villains, behind Hannibal Lecter and Norman Bates.[7] However, other critics consider him a tragic hero, citing his original motivations for the greater good before his fall to the dark side.[8][9]"
+    ]
+  },
+  {
+    "name": "Wilhuff Tarkin",
+    "height": "180",
+    "hair_color": "auburn, grey",
+    "skin_color": "fair",
+    "eye_color": "blue",
+    "birth_year": "64BBY",
+    "gender": "male",
+    "homeworld": "http://swapi.co/api/planets/21/",
+    "films": [
+      "http://swapi.co/api/films/1/",
+      "http://swapi.co/api/films/6/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/1/"
+    ],
+    "vehicles": [],
+    "starships": [],
+    "created": "2014-12-10T16:26:56.138000Z",
+    "edited": "2014-12-20T21:17:50.330000Z",
+    "url": "http://swapi.co/api/people/12/",
+    "desc": [
+      "Governor Wilhuff \"Grand Moff\" Tarkin, is a fictional character in the Star Wars franchise, first portrayed by Peter Cushing in the 1977 film Star Wars. He is the commander of the Death Star, the Galactic Empire's dwarf planet-sized super weapon. The character has been called \"one of the most formidable villains in Star Wars history.\"[1]"
+    ]
+  },
+  {
+    "name": "Chewbacca",
+    "height": "228",
+    "mass": "112",
+    "hair_color": "brown",
+    "eye_color": "blue",
+    "birth_year": "200BBY",
+    "gender": "male",
+    "homeworld": "http://swapi.co/api/planets/14/",
+    "films": [
+      "http://swapi.co/api/films/6/",
+      "http://swapi.co/api/films/3/",
+      "http://swapi.co/api/films/2/",
+      "http://swapi.co/api/films/1/",
+      "http://swapi.co/api/films/7/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/3/"
+    ],
+    "vehicles": [
+      "http://swapi.co/api/vehicles/19/"
+    ],
+    "starships": [
+      "http://swapi.co/api/starships/10/",
+      "http://swapi.co/api/starships/22/"
+    ],
+    "created": "2014-12-10T16:42:45.066000Z",
+    "edited": "2014-12-20T21:17:50.332000Z",
+    "url": "http://swapi.co/api/people/13/",
+    "desc": [
+      "Chewbacca (/tʃuːˈbɑːkə/), nicknamed \"Chewie\", is a fictional character in the Star Wars franchise. He is a Wookiee, a tall, hirsute biped and intelligent species from the planet Kashyyyk. Chewbacca is the loyal friend and first mate of Han Solo, and serves as co-pilot on Solo's spaceship, the Millennium Falcon.[1] Within the films of the main saga, Chewbacca is portrayed by Peter Mayhew in the Star Wars on Episodes from III to VIII (Mayhew shares the role with his body double Joonas Suotamo on Episode VII and VIII). Suotamo took over the role alone in Solo: A Star Wars Story. The character has also appeared on television, books, comics, and video games."
+    ]
+  },
+  {
+    "name": "Han Solo",
+    "height": "180",
+    "mass": "80",
+    "hair_color": "brown",
+    "skin_color": "fair",
+    "eye_color": "brown",
+    "birth_year": "29BBY",
+    "gender": "male",
+    "homeworld": "http://swapi.co/api/planets/22/",
+    "films": [
+      "http://swapi.co/api/films/3/",
+      "http://swapi.co/api/films/2/",
+      "http://swapi.co/api/films/1/",
+      "http://swapi.co/api/films/7/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/1/"
+    ],
+    "vehicles": [],
+    "starships": [
+      "http://swapi.co/api/starships/10/",
+      "http://swapi.co/api/starships/22/"
+    ],
+    "created": "2014-12-10T16:49:14.582000Z",
+    "edited": "2014-12-20T21:17:50.334000Z",
+    "url": "http://swapi.co/api/people/14/",
+    "desc": [
+      "Han Solo is a character in the Star Wars franchise. In the original film trilogy, Han and his co-pilot, Chewbacca, became involved in the Rebel Alliance's struggle against the Galactic Empire. During the course of the Star Wars narrative, he becomes a chief figure in the Alliance and succeeding galactic governments. Star Wars creator George Lucas described the character as \"a loner who realizes the importance of being part of a group and helping for the common good\".[2] Harrison Ford portrayed the character in the original Star Wars trilogy as well as The Force Awakens. Alden Ehrenreich will portray a young Han Solo in Solo: A Star Wars Story."
+    ]
+  },
+  {
+    "name": "Greedo",
+    "height": "173",
+    "mass": "74",
+    "skin_color": "green",
+    "eye_color": "black",
+    "birth_year": "44BBY",
+    "gender": "male",
+    "homeworld": "http://swapi.co/api/planets/23/",
+    "films": [
+      "http://swapi.co/api/films/1/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/4/"
+    ],
+    "vehicles": [],
+    "starships": [],
+    "created": "2014-12-10T17:03:30.334000Z",
+    "edited": "2014-12-20T21:17:50.336000Z",
+    "url": "http://swapi.co/api/people/15/",
+    "desc": [
+      "Greedo (or Greedo the Young) is a fictional character from the Star Wars franchise. He is portrayed by Paul Blake as well as Maria De Aragon in some close-in pickup shots in Star Wars (1977). The character is part of a fan controversy known as \"Han shot first\"."
+    ]
+  },
+  {
+    "name": "Jabba Desilijic Tiure",
+    "height": "175",
+    "mass": "1,358",
+    "skin_color": "green-tan, brown",
+    "eye_color": "orange",
+    "birth_year": "600BBY",
+    "gender": "hermaphrodite",
+    "homeworld": "http://swapi.co/api/planets/24/",
+    "films": [
+      "http://swapi.co/api/films/4/",
+      "http://swapi.co/api/films/3/",
+      "http://swapi.co/api/films/1/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/5/"
+    ],
+    "vehicles": [],
+    "starships": [],
+    "created": "2014-12-10T17:11:31.638000Z",
+    "edited": "2014-12-20T21:17:50.338000Z",
+    "url": "http://swapi.co/api/people/16/",
+    "desc": [
+      "Jabba Desilijic Tiure,[1] commonly known as Jabba the Hutt, is a fictional character and an antagonist in the Star Wars franchise created by George Lucas. He is depicted as a large, slug-like[2] alien. His appearance has been described by film critic Roger Ebert as a cross between a toad and the Cheshire Cat.[3]",
+      "In the original theatrical releases of the original Star Wars trilogy, Jabba the Hutt first appeared in Return of the Jedi (1983), though he is mentioned in Star Wars (1977) and The Empire Strikes Back (1980), and a previously deleted scene involving Jabba the Hutt was added to the 1997 theatrical re-release and subsequent home media releases of Star Wars. Jabba is introduced as the de facto leader of the Desilijic-Hutt Cartel, and the most powerful crime boss on Tatooine, who has a bounty on Han Solo's head. Jabba employs a retinue of career criminals, bounty hunters, smugglers, assassins and bodyguards to operate his criminal empire. He keeps a host of entertainers at his disposal at his palace: slaves, droids and alien creatures. Jabba has a grim sense of humor, an insatiable appetite, and affinities for gambling, slave girls, and torture.[1]",
+      "The character was incorporated into the Star Wars merchandising campaign that corresponded with the theatrical release of Return of the Jedi. Besides the films, Jabba the Hutt is featured in Star Wars Legends literature. Jabba the Hutt's image has since played an influential role in popular culture, particularly in the United States. The name is used as a satirical literary device and a political caricature to underscore negative qualities such as morbid obesity and corruption.[4][5]"
+    ]
+  },
+  {
+    "name": "Wedge Antilles",
+    "height": "170",
+    "mass": "77",
+    "hair_color": "brown",
+    "skin_color": "fair",
+    "eye_color": "hazel",
+    "birth_year": "21BBY",
+    "gender": "male",
+    "homeworld": "http://swapi.co/api/planets/22/",
+    "films": [
+      "http://swapi.co/api/films/3/",
+      "http://swapi.co/api/films/2/",
+      "http://swapi.co/api/films/1/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/1/"
+    ],
+    "vehicles": [
+      "http://swapi.co/api/vehicles/14/"
+    ],
+    "starships": [
+      "http://swapi.co/api/starships/12/"
+    ],
+    "created": "2014-12-12T11:08:06.469000Z",
+    "edited": "2014-12-20T21:17:50.341000Z",
+    "url": "http://swapi.co/api/people/18/",
+    "desc": [
+      "Wedge Antilles is a fictional character in the Star Wars franchise. He is a supporting character portrayed by Denis Lawson in the original Star Wars trilogy.[1] Antilles is a starfighter pilot for the Rebel Alliance, and founded Rogue Squadron with his friend Luke Skywalker. Wedge is notable for being the only Rebel pilot to have survived both attack runs on the Death Stars at the battles of Yavin and Endor.[1] He also appears in the Star Wars expanded universe, most notably as the lead character in most of the X-Wing novels."
+    ]
+  },
+  {
+    "name": "Jek Tono Porkins",
+    "height": "180",
+    "mass": "110",
+    "hair_color": "brown",
+    "skin_color": "fair",
+    "eye_color": "blue",
+    "gender": "male",
+    "homeworld": "http://swapi.co/api/planets/26/",
+    "films": [
+      "http://swapi.co/api/films/1/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/1/"
+    ],
+    "vehicles": [],
+    "starships": [
+      "http://swapi.co/api/starships/12/"
+    ],
+    "created": "2014-12-12T11:16:56.569000Z",
+    "edited": "2014-12-20T21:17:50.343000Z",
+    "url": "http://swapi.co/api/people/19/"
+  },
+  {
+    "name": "C-3PO",
+    "height": "167",
+    "mass": "75",
+    "skin_color": "gold",
+    "eye_color": "yellow",
+    "birth_year": "112BBY",
+    "homeworld": "http://swapi.co/api/planets/1/",
+    "films": [
+      "http://swapi.co/api/films/5/",
+      "http://swapi.co/api/films/4/",
+      "http://swapi.co/api/films/6/",
+      "http://swapi.co/api/films/3/",
+      "http://swapi.co/api/films/2/",
+      "http://swapi.co/api/films/1/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/2/"
+    ],
+    "vehicles": [],
+    "starships": [],
+    "created": "2014-12-10T15:10:51.357000Z",
+    "edited": "2014-12-20T21:17:50.309000Z",
+    "url": "http://swapi.co/api/people/2/",
+    "desc": [
+      "C-3PO (/siːˈθriːpi.oʊ/) or See-Threepio is a humanoid robot character from the Star Wars franchise who appears in the original trilogy, the prequel trilogy and the sequel trilogy. Built by Anakin Skywalker, C-3PO was designed as a protocol droid intended to assist in etiquette, customs, and translation, boasting that he is \"fluent in over six million forms of communication\". Along with his astromech droid counterpart and friend R2-D2, C-3PO provides comic relief within the narrative structure of the films, and serves as a foil. Anthony Daniels has portrayed the character in all nine Star Wars cinematic films released to date, including Rogue One and the animated The Clone Wars; C-3PO and R2-D2 are the only characters to appear in every film.",
+      "Despite his oblivious nature, C-3PO has played a pivotal role in the Galaxy's history, appearing under the service of Shmi Skywalker, the Lars homestead, Padmé Amidala, Raymus Antilles, Luke Skywalker, and Leia Organa. In the majority of depictions, C-3PO's physical appearance is primarily a polished gold plating, although his appearance varies throughout the films; including the absence of metal coverings in The Phantom Menace, a dull copper plating in Attack of the Clones, a silver lower right leg introduced in A New Hope, and a red left arm in The Force Awakens.[1] C-3PO also appears frequently in the Star Wars Canon and Star Wars Legends continuities of novels, comic books, and video games, and was the protagonist in the ABC television show Droids."
+    ]
+  },
+  {
+    "name": "Yoda",
+    "height": "66",
+    "mass": "17",
+    "hair_color": "white",
+    "skin_color": "green",
+    "eye_color": "brown",
+    "birth_year": "896BBY",
+    "gender": "male",
+    "homeworld": "http://swapi.co/api/planets/28/",
+    "films": [
+      "http://swapi.co/api/films/5/",
+      "http://swapi.co/api/films/4/",
+      "http://swapi.co/api/films/6/",
+      "http://swapi.co/api/films/3/",
+      "http://swapi.co/api/films/2/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/6/"
+    ],
+    "vehicles": [],
+    "starships": [],
+    "created": "2014-12-15T12:26:01.042000Z",
+    "edited": "2014-12-20T21:17:50.345000Z",
+    "url": "http://swapi.co/api/people/20/",
+    "desc": [
+      "Yoda is a fictional character in the Star Wars franchise created by George Lucas, first appearing in the 1980 film The Empire Strikes Back. In the original films, he trains Luke Skywalker to fight against the Galactic Empire. In the prequel films, he serves as the Grand Master of the Jedi Order and as a high-ranking general of Clone Troopers in the Clone Wars. Following his death in Return of the Jedi at the age of 900, Yoda was the oldest living character in the Star Wars franchise in canon, until the introduction of Maz Kanata in Star Wars: The Force Awakens."
+    ]
+  },
+  {
+    "name": "Palpatine",
+    "height": "170",
+    "mass": "75",
+    "hair_color": "grey",
+    "skin_color": "pale",
+    "eye_color": "yellow",
+    "birth_year": "82BBY",
+    "gender": "male",
+    "homeworld": "http://swapi.co/api/planets/8/",
+    "films": [
+      "http://swapi.co/api/films/5/",
+      "http://swapi.co/api/films/4/",
+      "http://swapi.co/api/films/6/",
+      "http://swapi.co/api/films/3/",
+      "http://swapi.co/api/films/2/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/1/"
+    ],
+    "vehicles": [],
+    "starships": [],
+    "created": "2014-12-15T12:48:05.971000Z",
+    "edited": "2014-12-20T21:17:50.347000Z",
+    "url": "http://swapi.co/api/people/21/",
+    "desc": [
+      "Sheev Palpatine[3], also known as Darth Sidious and The Emperor, is a fictional character and one of the primary antagonists of the Star Wars franchise,[4] mainly portrayed by Ian McDiarmid. In the original trilogy, he is depicted as the aged, pale-faced and cloaked Emperor of the Galactic Empire and the master of Darth Vader. In the prequel trilogy, he is portrayed as a charismatic Senator from Naboo who uses deception and political manipulation to rise to the position of Supreme Chancellor of the Galactic Republic, and then reorganizes the Republic into the Galactic Empire, with himself as Emperor.",
+      "Though outwardly appearing to be a well-intentioned public servant and supporter of democracy prior to becoming Emperor,[5] he is actually Darth Sidious, the Dark Lord of the Sith – a cult of practitioners of the dark side of the Force previously thought to have been extinct in the Star Wars galaxy for a millennium.[5] As Sidious, he instigates the Clone Wars, nearly destroys the Jedi, and transforms the Republic into the Empire. He also manipulates Jedi Knight Anakin Skywalker into turning to the dark side and serving at his side as Darth Vader. Palpatine's reign is brought to an end when Vader kills him to save his son, Luke Skywalker.",
+      "Since the initial theatrical run of Return of the Jedi, Palpatine has become a widely recognized popular culture symbol of evil, sinister deception, dictatorship, tyranny, and the subversion of democracy."
+    ]
+  },
+  {
+    "name": "Boba Fett",
+    "height": "183",
+    "mass": "78.2",
+    "hair_color": "black",
+    "skin_color": "fair",
+    "eye_color": "brown",
+    "birth_year": "31.5BBY",
+    "gender": "male",
+    "homeworld": "http://swapi.co/api/planets/10/",
+    "films": [
+      "http://swapi.co/api/films/5/",
+      "http://swapi.co/api/films/3/",
+      "http://swapi.co/api/films/2/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/1/"
+    ],
+    "vehicles": [],
+    "starships": [
+      "http://swapi.co/api/starships/21/"
+    ],
+    "created": "2014-12-15T12:49:32.457000Z",
+    "edited": "2014-12-20T21:17:50.349000Z",
+    "url": "http://swapi.co/api/people/22/",
+    "desc": [
+      "Boba Fett is a fictional character in the Star Wars franchise. In The Empire Strikes Back and Return of the Jedi, he is a bounty hunter hired by Darth Vader and also employed by Jabba the Hutt. He was also added briefly to the original film Star Wars when the film was digitally remastered. Star Wars: Episode II – Attack of the Clones establishes his origin as an unaltered clone of the bounty hunter Jango Fett raised as his son. He also appears in several episodes of Star Wars: The Clone Wars cartoon series which further describes his growth as a villain in the Star Wars universe. His aura of danger and mystery has created a cult following for the character."
+    ]
+  },
+  {
+    "name": "IG-88",
+    "height": "200",
+    "mass": "140",
+    "hair_color": "none",
+    "skin_color": "metal",
+    "eye_color": "red",
+    "birth_year": "15BBY",
+    "gender": "none",
+    "homeworld": "http://swapi.co/api/planets/28/",
+    "films": [
+      "http://swapi.co/api/films/2/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/2/"
+    ],
+    "vehicles": [],
+    "starships": [],
+    "created": "2014-12-15T12:51:10.076000Z",
+    "edited": "2014-12-20T21:17:50.351000Z",
+    "url": "http://swapi.co/api/people/23/"
+  },
+  {
+    "name": "Bossk",
+    "height": "190",
+    "mass": "113",
+    "hair_color": "none",
+    "skin_color": "green",
+    "eye_color": "red",
+    "birth_year": "53BBY",
+    "gender": "male",
+    "homeworld": "http://swapi.co/api/planets/29/",
+    "films": [
+      "http://swapi.co/api/films/2/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/7/"
+    ],
+    "vehicles": [],
+    "starships": [],
+    "created": "2014-12-15T12:53:49.297000Z",
+    "edited": "2014-12-20T21:17:50.355000Z",
+    "url": "http://swapi.co/api/people/24/"
+  },
+  {
+    "name": "Lando Calrissian",
+    "height": "177",
+    "mass": "79",
+    "hair_color": "black",
+    "skin_color": "dark",
+    "eye_color": "brown",
+    "birth_year": "31BBY",
+    "gender": "male",
+    "homeworld": "http://swapi.co/api/planets/30/",
+    "films": [
+      "http://swapi.co/api/films/3/",
+      "http://swapi.co/api/films/2/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/1/"
+    ],
+    "vehicles": [],
+    "starships": [
+      "http://swapi.co/api/starships/10/"
+    ],
+    "created": "2014-12-15T12:56:32.683000Z",
+    "edited": "2014-12-20T21:17:50.357000Z",
+    "url": "http://swapi.co/api/people/25/",
+    "desc": [
+      "Lando Calrissian is a fictional character in the Star Wars franchise. He is portrayed by Billy Dee Williams in The Empire Strikes Back and Return of the Jedi, and will be played by Donald Glover in the upcoming standalone film, Solo: A Star Wars Story.[1] He also appears frequently in the Star Wars expanded universe of novels, comic books and video games, including a series of novels in which he is the protagonist."
+    ]
+  },
+  {
+    "name": "Lobot",
+    "height": "175",
+    "mass": "79",
+    "hair_color": "none",
+    "skin_color": "light",
+    "eye_color": "blue",
+    "birth_year": "37BBY",
+    "gender": "male",
+    "homeworld": "http://swapi.co/api/planets/6/",
+    "films": [
+      "http://swapi.co/api/films/2/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/1/"
+    ],
+    "vehicles": [],
+    "starships": [],
+    "created": "2014-12-15T13:01:57.178000Z",
+    "edited": "2014-12-20T21:17:50.359000Z",
+    "url": "http://swapi.co/api/people/26/"
+  },
+  {
+    "name": "Ackbar",
+    "height": "180",
+    "mass": "83",
+    "hair_color": "none",
+    "skin_color": "brown mottle",
+    "eye_color": "orange",
+    "birth_year": "41BBY",
+    "gender": "male",
+    "homeworld": "http://swapi.co/api/planets/31/",
+    "films": [
+      "http://swapi.co/api/films/3/",
+      "http://swapi.co/api/films/7/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/8/"
+    ],
+    "vehicles": [],
+    "starships": [],
+    "created": "2014-12-18T11:07:50.584000Z",
+    "edited": "2014-12-20T21:17:50.362000Z",
+    "url": "http://swapi.co/api/people/27/"
+  },
+  {
+    "name": "Mon Mothma",
+    "height": "150",
+    "hair_color": "auburn",
+    "skin_color": "fair",
+    "eye_color": "blue",
+    "birth_year": "48BBY",
+    "gender": "female",
+    "homeworld": "http://swapi.co/api/planets/32/",
+    "films": [
+      "http://swapi.co/api/films/3/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/1/"
+    ],
+    "vehicles": [],
+    "starships": [],
+    "created": "2014-12-18T11:12:38.895000Z",
+    "edited": "2014-12-20T21:17:50.364000Z",
+    "url": "http://swapi.co/api/people/28/"
+  },
+  {
+    "name": "Arvel Crynyd",
+    "hair_color": "brown",
+    "skin_color": "fair",
+    "eye_color": "brown",
+    "gender": "male",
+    "homeworld": "http://swapi.co/api/planets/28/",
+    "films": [
+      "http://swapi.co/api/films/3/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/1/"
+    ],
+    "vehicles": [],
+    "starships": [
+      "http://swapi.co/api/starships/28/"
+    ],
+    "created": "2014-12-18T11:16:33.020000Z",
+    "edited": "2014-12-20T21:17:50.367000Z",
+    "url": "http://swapi.co/api/people/29/"
+  },
+  {
+    "name": "R2-D2",
+    "height": "96",
+    "mass": "32",
+    "skin_color": "white, blue",
+    "eye_color": "red",
+    "birth_year": "33BBY",
+    "homeworld": "http://swapi.co/api/planets/8/",
+    "films": [
+      "http://swapi.co/api/films/5/",
+      "http://swapi.co/api/films/4/",
+      "http://swapi.co/api/films/6/",
+      "http://swapi.co/api/films/3/",
+      "http://swapi.co/api/films/2/",
+      "http://swapi.co/api/films/1/",
+      "http://swapi.co/api/films/7/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/2/"
+    ],
+    "vehicles": [],
+    "starships": [],
+    "created": "2014-12-10T15:11:50.376000Z",
+    "edited": "2014-12-20T21:17:50.311000Z",
+    "url": "http://swapi.co/api/people/3/",
+    "desc": [
+      "R2-D2 is a fictional robot character in the Star Wars franchise created by George Lucas, who appears in the original trilogy, the prequel trilogy, the sequel trilogy, and Rogue One. A small astromech droid, R2-D2 is a major character and appears in all Star Wars films to date. Throughout the course of the films, he joins or supports Padmé Amidala, Anakin Skywalker, Leia Organa, Luke Skywalker, and Obi-Wan Kenobi in various points in the saga.",
+      "English actor Kenny Baker played R2-D2 in all three original Star Wars films, and received billing credit for the character in the prequel trilogy, where Baker's role was reduced, as R2-D2 was portrayed mainly by radio controlled props and CGI models. In the sequel trilogy, Baker was credited as consultant for The Force Awakens, however Jimmy Vee also co-performed the character in some scenes. Vee later took over the role beginning in The Last Jedi.[1] R2-D2's sounds and vocal effects were created by Ben Burtt. R2-D2 was designed in artwork by Ralph McQuarrie, co-developed by John Stears and built by Tony Dyson."
+    ]
+  },
+  {
+    "name": "Wicket Systri Warrick",
+    "height": "88",
+    "mass": "20",
+    "hair_color": "brown",
+    "skin_color": "brown",
+    "eye_color": "brown",
+    "birth_year": "8BBY",
+    "gender": "male",
+    "homeworld": "http://swapi.co/api/planets/7/",
+    "films": [
+      "http://swapi.co/api/films/3/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/9/"
+    ],
+    "vehicles": [],
+    "starships": [],
+    "created": "2014-12-18T11:21:58.954000Z",
+    "edited": "2014-12-20T21:17:50.369000Z",
+    "url": "http://swapi.co/api/people/30/"
+  },
+  {
+    "name": "Nien Nunb",
+    "height": "160",
+    "mass": "68",
+    "hair_color": "none",
+    "skin_color": "grey",
+    "eye_color": "black",
+    "gender": "male",
+    "homeworld": "http://swapi.co/api/planets/33/",
+    "films": [
+      "http://swapi.co/api/films/3/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/10/"
+    ],
+    "vehicles": [],
+    "starships": [
+      "http://swapi.co/api/starships/10/"
+    ],
+    "created": "2014-12-18T11:26:18.541000Z",
+    "edited": "2014-12-20T21:17:50.371000Z",
+    "url": "http://swapi.co/api/people/31/",
+    "desc": [
+      "Nien Nunb is a fictional character in the Star Wars franchise. Introduced in the 1983 film Return of the Jedi, he was brought to life both as a puppet and a costumed actor during the film. Nunb was puppeteered by Mike Quinn and was portrayed by Richard Bonehill in wide shots. The character was voiced by Kipsang Rotich, a Kenyan student who spoke in his native Kalenjin language, as well as in the Kikuyu language. Quinn and Rotich returned to the role for the 2015 film Star Wars: The Force Awakens, with the former confirmed for the 2017 film Star Wars: The Last Jedi.",
+      "Within the fictional Star Wars universe, Nien Nunb was an arms dealer of the Sullustan species who joined the Alliance to Restore the Republic during the Galactic Civil War. Three decades later, Nunb was a starfighter pilot in the Resistance. He fought in the First Order–Resistance conflict, including the Battle of Starkiller Base."
+    ]
+  },
+  {
+    "name": "Qui-Gon Jinn",
+    "height": "193",
+    "mass": "89",
+    "hair_color": "brown",
+    "skin_color": "fair",
+    "eye_color": "blue",
+    "birth_year": "92BBY",
+    "gender": "male",
+    "homeworld": "http://swapi.co/api/planets/28/",
+    "films": [
+      "http://swapi.co/api/films/4/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/1/"
+    ],
+    "vehicles": [
+      "http://swapi.co/api/vehicles/38/"
+    ],
+    "starships": [],
+    "created": "2014-12-19T16:54:53.618000Z",
+    "edited": "2014-12-20T21:17:50.375000Z",
+    "url": "http://swapi.co/api/people/32/",
+    "desc": [
+      "Qui-Gon Jinn is a fictional character in the Star Wars franchise, portrayed by Liam Neeson as the main protagonist of the 1999 film Star Wars: Episode I – The Phantom Menace."
+    ]
+  },
+  {
+    "name": "Nute Gunray",
+    "height": "191",
+    "mass": "90",
+    "hair_color": "none",
+    "skin_color": "mottled green",
+    "eye_color": "red",
+    "gender": "male",
+    "homeworld": "http://swapi.co/api/planets/18/",
+    "films": [
+      "http://swapi.co/api/films/5/",
+      "http://swapi.co/api/films/4/",
+      "http://swapi.co/api/films/6/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/11/"
+    ],
+    "vehicles": [],
+    "starships": [],
+    "created": "2014-12-19T17:05:57.357000Z",
+    "edited": "2014-12-20T21:17:50.377000Z",
+    "url": "http://swapi.co/api/people/33/"
+  },
+  {
+    "name": "Finis Valorum",
+    "height": "170",
+    "hair_color": "blond",
+    "skin_color": "fair",
+    "eye_color": "blue",
+    "birth_year": "91BBY",
+    "gender": "male",
+    "homeworld": "http://swapi.co/api/planets/9/",
+    "films": [
+      "http://swapi.co/api/films/4/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/1/"
+    ],
+    "vehicles": [],
+    "starships": [],
+    "created": "2014-12-19T17:21:45.915000Z",
+    "edited": "2014-12-20T21:17:50.379000Z",
+    "url": "http://swapi.co/api/people/34/"
+  },
+  {
+    "name": "Padmé Amidala",
+    "height": "165",
+    "mass": "45",
+    "hair_color": "brown",
+    "skin_color": "light",
+    "eye_color": "brown",
+    "birth_year": "46BBY",
+    "gender": "female",
+    "homeworld": "http://swapi.co/api/planets/8/",
+    "films": [
+      "http://swapi.co/api/films/5/",
+      "http://swapi.co/api/films/4/",
+      "http://swapi.co/api/films/6/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/1/"
+    ],
+    "vehicles": [],
+    "starships": [
+      "http://swapi.co/api/starships/49/",
+      "http://swapi.co/api/starships/64/",
+      "http://swapi.co/api/starships/39/"
+    ],
+    "created": "2014-12-19T17:28:26.926000Z",
+    "edited": "2016-04-20T17:06:31.502555Z",
+    "url": "http://swapi.co/api/people/35/",
+    "desc": [
+      "Padmé Amidala (born Padmé Naberrie) is a fictional character in the Star Wars franchise, appearing in the prequel trilogy portrayed by actress Natalie Portman. She served as the Princess of Theed and later Queen of Naboo. After her reign, she became a senator in the Galactic Senate, an anti-war movement spokesperson, and co-founder of the opposition-faction that later emerged as the Rebel Alliance.[2] She was secretly married to the Jedi Anakin Skywalker, and the biological mother of Luke Skywalker and Leia Organa, which makes her the mother-in-law of Han Solo, and the grandmother of Kylo Ren."
+    ]
+  },
+  {
+    "name": "Jar Jar Binks",
+    "height": "196",
+    "mass": "66",
+    "hair_color": "none",
+    "skin_color": "orange",
+    "eye_color": "orange",
+    "birth_year": "52BBY",
+    "gender": "male",
+    "homeworld": "http://swapi.co/api/planets/8/",
+    "films": [
+      "http://swapi.co/api/films/5/",
+      "http://swapi.co/api/films/4/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/12/"
+    ],
+    "vehicles": [],
+    "starships": [],
+    "created": "2014-12-19T17:29:32.489000Z",
+    "edited": "2014-12-20T21:17:50.383000Z",
+    "url": "http://swapi.co/api/people/36/",
+    "desc": [
+      "Jar Jar Binks is a fictional character from the Star Wars saga created by George Lucas. A major character in Star Wars: Episode I – The Phantom Menace, he also has a smaller role in Episode II: Attack of the Clones, and a one-line cameo in Episode III: Revenge of the Sith, as well as a role in the television series Star Wars: The Clone Wars. The first lead computer generated character of the franchise, he has been portrayed by Ahmed Best in most of his appearances.",
+      "Jar Jar's primary role in Episode I was to provide comic relief for the audience. Upon the movie's release, he was met with an overwhelmingly negative reception from both critics and audiences, and is today considered one of the most hated characters in the history of film.[1][2]"
+    ]
+  },
+  {
+    "name": "Roos Tarpals",
+    "height": "224",
+    "mass": "82",
+    "hair_color": "none",
+    "skin_color": "grey",
+    "eye_color": "orange",
+    "gender": "male",
+    "homeworld": "http://swapi.co/api/planets/8/",
+    "films": [
+      "http://swapi.co/api/films/4/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/12/"
+    ],
+    "vehicles": [],
+    "starships": [],
+    "created": "2014-12-19T17:32:56.741000Z",
+    "edited": "2014-12-20T21:17:50.385000Z",
+    "url": "http://swapi.co/api/people/37/"
+  },
+  {
+    "name": "Rugor Nass",
+    "height": "206",
+    "hair_color": "none",
+    "skin_color": "green",
+    "eye_color": "orange",
+    "gender": "male",
+    "homeworld": "http://swapi.co/api/planets/8/",
+    "films": [
+      "http://swapi.co/api/films/4/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/12/"
+    ],
+    "vehicles": [],
+    "starships": [],
+    "created": "2014-12-19T17:33:38.909000Z",
+    "edited": "2014-12-20T21:17:50.388000Z",
+    "url": "http://swapi.co/api/people/38/"
+  },
+  {
+    "name": "Ric Olié",
+    "height": "183",
+    "hair_color": "brown",
+    "skin_color": "fair",
+    "eye_color": "blue",
+    "gender": "male",
+    "homeworld": "http://swapi.co/api/planets/8/",
+    "films": [
+      "http://swapi.co/api/films/4/"
+    ],
+    "species": [],
+    "vehicles": [],
+    "starships": [
+      "http://swapi.co/api/starships/40/"
+    ],
+    "created": "2014-12-19T17:45:01.522000Z",
+    "edited": "2014-12-20T21:17:50.392000Z",
+    "url": "http://swapi.co/api/people/39/"
+  },
+  {
+    "name": "Darth Vader",
+    "height": "202",
+    "mass": "136",
+    "hair_color": "none",
+    "skin_color": "white",
+    "eye_color": "yellow",
+    "birth_year": "41.9BBY",
+    "gender": "male",
+    "homeworld": "http://swapi.co/api/planets/1/",
+    "films": [
+      "http://swapi.co/api/films/6/",
+      "http://swapi.co/api/films/3/",
+      "http://swapi.co/api/films/2/",
+      "http://swapi.co/api/films/1/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/1/"
+    ],
+    "vehicles": [],
+    "starships": [
+      "http://swapi.co/api/starships/13/"
+    ],
+    "created": "2014-12-10T15:18:20.704000Z",
+    "edited": "2014-12-20T21:17:50.313000Z",
+    "url": "http://swapi.co/api/people/4/",
+    "desc": [
+      "Darth Vader, also known by his birth name Anakin Skywalker, is a fictional character in the Star Wars franchise.[1][2][3] Vader appears in the original film trilogy as a pivotal antagonist whose actions drive the plot, while his past as Anakin Skywalker and the story of his corruption are central to the narrative of the prequel trilogy.",
+      "The character was created by George Lucas and has been portrayed by numerous actors. His appearances span the first six Star Wars films, as well as Rogue One, and his character is heavily referenced in Star Wars: The Force Awakens. He is also an important character in the Star Wars expanded universe of television series, video games, novels, literature and comic books. Originally a Jedi prophesied to bring balance to the Force, he falls to the dark side of the Force and serves the evil Galactic Empire at the right hand of his Sith master, Emperor Palpatine (also known as Darth Sidious).[4] He is also the father of Luke Skywalker and Princess Leia Organa, secret husband of Padmé Amidala and grandfather of Kylo Ren.",
+      "Darth Vader has become one of the most iconic villains in popular culture, and has been listed among the greatest villains and fictional characters ever.[5][6] The American Film Institute listed him as the third greatest movie villain in cinema history on 100 Years... 100 Heroes and Villains, behind Hannibal Lecter and Norman Bates.[7] However, other critics consider him a tragic hero, citing his original motivations for the greater good before his fall to the dark side.[8][9]"
+    ]
+  },
+  {
+    "name": "Watto",
+    "height": "137",
+    "hair_color": "black",
+    "skin_color": "blue, grey",
+    "eye_color": "yellow",
+    "gender": "male",
+    "homeworld": "http://swapi.co/api/planets/34/",
+    "films": [
+      "http://swapi.co/api/films/5/",
+      "http://swapi.co/api/films/4/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/13/"
+    ],
+    "vehicles": [],
+    "starships": [],
+    "created": "2014-12-19T17:48:54.647000Z",
+    "edited": "2014-12-20T21:17:50.395000Z",
+    "url": "http://swapi.co/api/people/40/",
+    "desc": [
+      "Watto is a fictional character in the Star Wars franchise, featured in the films The Phantom Menace and Attack of the Clones. He is computer-generated and played by voice actor Andy Secombe. He is a mean-tempered, greedy Toydarian, and owner of a second-hand goods store in Mos Espa on the planet Tatooine. Among Watto's belongings are the slaves Shmi Skywalker and her son, Anakin. He acquires them after winning a podracing bet with Gardulla the Hutt, and he puts them both to work in his store. Anakin demonstrates an incredible aptitude for equipment repair, and Watto decides to profit from it by having the boy fix various broken equipment in the store. He eventually loses Anakin in a podracing bet with Qui-Gon Jinn when he bets on a competitor, Sebulba, who is defeated by Anakin."
+    ]
+  },
+  {
+    "name": "Sebulba",
+    "height": "112",
+    "mass": "40",
+    "hair_color": "none",
+    "skin_color": "grey, red",
+    "eye_color": "orange",
+    "gender": "male",
+    "homeworld": "http://swapi.co/api/planets/35/",
+    "films": [
+      "http://swapi.co/api/films/4/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/14/"
+    ],
+    "vehicles": [],
+    "starships": [],
+    "created": "2014-12-19T17:53:02.586000Z",
+    "edited": "2014-12-20T21:17:50.397000Z",
+    "url": "http://swapi.co/api/people/41/"
+  },
+  {
+    "name": "Quarsh Panaka",
+    "height": "183",
+    "hair_color": "black",
+    "skin_color": "dark",
+    "eye_color": "brown",
+    "birth_year": "62BBY",
+    "gender": "male",
+    "homeworld": "http://swapi.co/api/planets/8/",
+    "films": [
+      "http://swapi.co/api/films/4/"
+    ],
+    "species": [],
+    "vehicles": [],
+    "starships": [],
+    "created": "2014-12-19T17:55:43.348000Z",
+    "edited": "2014-12-20T21:17:50.399000Z",
+    "url": "http://swapi.co/api/people/42/"
+  },
+  {
+    "name": "Shmi Skywalker",
+    "height": "163",
+    "hair_color": "black",
+    "skin_color": "fair",
+    "eye_color": "brown",
+    "birth_year": "72BBY",
+    "gender": "female",
+    "homeworld": "http://swapi.co/api/planets/1/",
+    "films": [
+      "http://swapi.co/api/films/5/",
+      "http://swapi.co/api/films/4/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/1/"
+    ],
+    "vehicles": [],
+    "starships": [],
+    "created": "2014-12-19T17:57:41.191000Z",
+    "edited": "2014-12-20T21:17:50.401000Z",
+    "url": "http://swapi.co/api/people/43/"
+  },
+  {
+    "name": "Darth Maul",
+    "height": "175",
+    "mass": "80",
+    "hair_color": "none",
+    "skin_color": "red",
+    "eye_color": "yellow",
+    "birth_year": "54BBY",
+    "gender": "male",
+    "homeworld": "http://swapi.co/api/planets/36/",
+    "films": [
+      "http://swapi.co/api/films/4/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/22/"
+    ],
+    "vehicles": [
+      "http://swapi.co/api/vehicles/42/"
+    ],
+    "starships": [
+      "http://swapi.co/api/starships/41/"
+    ],
+    "created": "2014-12-19T18:00:41.929000Z",
+    "edited": "2014-12-20T21:17:50.403000Z",
+    "url": "http://swapi.co/api/people/44/",
+    "desc": [
+      "Darth Maul, later known simply as Maul, is a fictional character in the Star Wars franchise. Trained as Darth Sidious's first apprentice, he serves as a Sith Lord and a master of wielding a double-bladed lightsaber. He first appears in Star Wars: Episode I – The Phantom Menace (portrayed by Ray Park and voiced by Peter Serafinowicz), and later makes appearances in Star Wars: The Clone Wars and Star Wars Rebels, voiced by Samuel Witwer."
+    ]
+  },
+  {
+    "name": "Bib Fortuna",
+    "height": "180",
+    "hair_color": "none",
+    "skin_color": "pale",
+    "eye_color": "pink",
+    "gender": "male",
+    "homeworld": "http://swapi.co/api/planets/37/",
+    "films": [
+      "http://swapi.co/api/films/3/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/15/"
+    ],
+    "vehicles": [],
+    "starships": [],
+    "created": "2014-12-20T09:47:02.512000Z",
+    "edited": "2014-12-20T21:17:50.407000Z",
+    "url": "http://swapi.co/api/people/45/"
+  },
+  {
+    "name": "Ayla Secura",
+    "height": "178",
+    "mass": "55",
+    "hair_color": "none",
+    "skin_color": "blue",
+    "eye_color": "hazel",
+    "birth_year": "48BBY",
+    "gender": "female",
+    "homeworld": "http://swapi.co/api/planets/37/",
+    "films": [
+      "http://swapi.co/api/films/5/",
+      "http://swapi.co/api/films/4/",
+      "http://swapi.co/api/films/6/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/15/"
+    ],
+    "vehicles": [],
+    "starships": [],
+    "created": "2014-12-20T09:48:01.172000Z",
+    "edited": "2014-12-20T21:17:50.409000Z",
+    "url": "http://swapi.co/api/people/46/"
+  },
+  {
+    "name": "Ratts Tyerell",
+    "height": "79",
+    "mass": "15",
+    "hair_color": "none",
+    "skin_color": "grey, blue",
+    "gender": "male",
+    "homeworld": "http://swapi.co/api/planets/38/",
+    "films": [
+      "http://swapi.co/api/films/4/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/16/"
+    ],
+    "vehicles": [],
+    "starships": [],
+    "created": "2014-12-20T09:53:15.086000Z",
+    "edited": "2016-06-30T12:52:19.604868Z",
+    "url": "http://swapi.co/api/people/47/"
+  },
+  {
+    "name": "Dud Bolt",
+    "height": "94",
+    "mass": "45",
+    "hair_color": "none",
+    "skin_color": "blue, grey",
+    "eye_color": "yellow",
+    "gender": "male",
+    "homeworld": "http://swapi.co/api/planets/39/",
+    "films": [
+      "http://swapi.co/api/films/4/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/17/"
+    ],
+    "vehicles": [],
+    "starships": [],
+    "created": "2014-12-20T09:57:31.858000Z",
+    "edited": "2014-12-20T21:17:50.414000Z",
+    "url": "http://swapi.co/api/people/48/"
+  },
+  {
+    "name": "Gasgano",
+    "height": "122",
+    "hair_color": "none",
+    "skin_color": "white, blue",
+    "eye_color": "black",
+    "gender": "male",
+    "homeworld": "http://swapi.co/api/planets/40/",
+    "films": [
+      "http://swapi.co/api/films/4/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/18/"
+    ],
+    "vehicles": [],
+    "starships": [],
+    "created": "2014-12-20T10:02:12.223000Z",
+    "edited": "2014-12-20T21:17:50.416000Z",
+    "url": "http://swapi.co/api/people/49/"
+  },
+  {
+    "name": "Leia Organa",
+    "height": "150",
+    "mass": "49",
+    "hair_color": "brown",
+    "skin_color": "light",
+    "eye_color": "brown",
+    "birth_year": "19BBY",
+    "gender": "female",
+    "homeworld": "http://swapi.co/api/planets/2/",
+    "films": [
+      "http://swapi.co/api/films/6/",
+      "http://swapi.co/api/films/3/",
+      "http://swapi.co/api/films/2/",
+      "http://swapi.co/api/films/1/",
+      "http://swapi.co/api/films/7/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/1/"
+    ],
+    "vehicles": [
+      "http://swapi.co/api/vehicles/30/"
+    ],
+    "starships": [],
+    "created": "2014-12-10T15:20:09.791000Z",
+    "edited": "2014-12-20T21:17:50.315000Z",
+    "url": "http://swapi.co/api/people/5/",
+    "desc": [
+      "Princess Leia Organa of Alderaan (also Senator Leia Organa or General Leia Organa) is a fictional character in the Star Wars franchise, portrayed in films by Carrie Fisher. Introduced in the original Star Wars film in 1977, Leia is princess of the planet Alderaan, a member of the Imperial Senate and an agent of the Rebel Alliance. She thwarts the sinister Sith Lord Darth Vader and helps bring about the destruction of the Empire's cataclysmic superweapon, the Death Star. In The Empire Strikes Back (1980), Leia commands a Rebel base and evades Vader as she falls in love with the smuggler, Han Solo. In Return of the Jedi (1983), Leia leads the operation to rescue Han from the crime lord Jabba the Hutt, and is revealed to be Vader's daughter and the twin sister of Luke Skywalker. The prequel film Revenge of the Sith (2005) establishes that the twins' mother is Senator (and former queen) Padmé Amidala of Naboo, who dies after childbirth. Leia is adopted by Senator Bail and Queen Breha Organa of Alderaan. In The Force Awakens (2015), Leia is the founder and General of the Resistance against the First Order and has a son with Han named Ben, who goes by the name Kylo Ren.",
+      "In the original Star Wars expanded universe (1977–2014) of novels, comics and video games, which are set in an alternate continuity, Leia continues her adventures with Han and Luke after Return of the Jedi, fighting Imperial resurgences and new threats to the galaxy. She becomes the Chief of State of the New Republic and a Jedi Master, and is the mother to three children by Han: Jaina, Jacen and Anakin Solo.",
+      "One of the more popular Star Wars characters, Leia has been called a 1980s icon, a feminist hero and model for other adventure heroines. She has appeared in many derivative works and merchandising, and has been referenced or parodied in several TV shows and films. Her \"cinnamon buns\" hairstyle from Star Wars (1977) and metal bikini from Return of the Jedi have become cultural icons."
+    ]
+  },
+  {
+    "name": "Ben Quadinaros",
+    "height": "163",
+    "mass": "65",
+    "hair_color": "none",
+    "skin_color": "grey, green, yellow",
+    "eye_color": "orange",
+    "gender": "male",
+    "homeworld": "http://swapi.co/api/planets/41/",
+    "films": [
+      "http://swapi.co/api/films/4/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/19/"
+    ],
+    "vehicles": [],
+    "starships": [],
+    "created": "2014-12-20T10:08:33.777000Z",
+    "edited": "2014-12-20T21:17:50.417000Z",
+    "url": "http://swapi.co/api/people/50/"
+  },
+  {
+    "name": "Mace Windu",
+    "height": "188",
+    "mass": "84",
+    "hair_color": "none",
+    "skin_color": "dark",
+    "eye_color": "brown",
+    "birth_year": "72BBY",
+    "gender": "male",
+    "homeworld": "http://swapi.co/api/planets/42/",
+    "films": [
+      "http://swapi.co/api/films/5/",
+      "http://swapi.co/api/films/4/",
+      "http://swapi.co/api/films/6/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/1/"
+    ],
+    "vehicles": [],
+    "starships": [],
+    "created": "2014-12-20T10:12:30.846000Z",
+    "edited": "2014-12-20T21:17:50.420000Z",
+    "url": "http://swapi.co/api/people/51/",
+    "desc": [
+      "Mace Windu is a fictional character in the Star Wars franchise, portrayed by actor Samuel L. Jackson in the prequel films and voiced by voice-actor Terrence C. Carson in other projects. He appears as Master of the Jedi High Council and one of the last members of the order's upper echelons before the Galactic Republic's fall. He is the Council's primary liaison, although the Clone Wars caused him to question his most firmly held beliefs.[1]"
+    ]
+  },
+  {
+    "name": "Ki-Adi-Mundi",
+    "height": "198",
+    "mass": "82",
+    "hair_color": "white",
+    "skin_color": "pale",
+    "eye_color": "yellow",
+    "birth_year": "92BBY",
+    "gender": "male",
+    "homeworld": "http://swapi.co/api/planets/43/",
+    "films": [
+      "http://swapi.co/api/films/5/",
+      "http://swapi.co/api/films/4/",
+      "http://swapi.co/api/films/6/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/20/"
+    ],
+    "vehicles": [],
+    "starships": [],
+    "created": "2014-12-20T10:15:32.293000Z",
+    "edited": "2014-12-20T21:17:50.422000Z",
+    "url": "http://swapi.co/api/people/52/"
+  },
+  {
+    "name": "Kit Fisto",
+    "height": "196",
+    "mass": "87",
+    "hair_color": "none",
+    "skin_color": "green",
+    "eye_color": "black",
+    "gender": "male",
+    "homeworld": "http://swapi.co/api/planets/44/",
+    "films": [
+      "http://swapi.co/api/films/5/",
+      "http://swapi.co/api/films/4/",
+      "http://swapi.co/api/films/6/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/21/"
+    ],
+    "vehicles": [],
+    "starships": [],
+    "created": "2014-12-20T10:18:57.202000Z",
+    "edited": "2014-12-20T21:17:50.424000Z",
+    "url": "http://swapi.co/api/people/53/"
+  },
+  {
+    "name": "Eeth Koth",
+    "height": "171",
+    "hair_color": "black",
+    "skin_color": "brown",
+    "eye_color": "brown",
+    "gender": "male",
+    "homeworld": "http://swapi.co/api/planets/45/",
+    "films": [
+      "http://swapi.co/api/films/4/",
+      "http://swapi.co/api/films/6/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/22/"
+    ],
+    "vehicles": [],
+    "starships": [],
+    "created": "2014-12-20T10:26:47.902000Z",
+    "edited": "2014-12-20T21:17:50.427000Z",
+    "url": "http://swapi.co/api/people/54/"
+  },
+  {
+    "name": "Adi Gallia",
+    "height": "184",
+    "mass": "50",
+    "hair_color": "none",
+    "skin_color": "dark",
+    "eye_color": "blue",
+    "gender": "female",
+    "homeworld": "http://swapi.co/api/planets/9/",
+    "films": [
+      "http://swapi.co/api/films/4/",
+      "http://swapi.co/api/films/6/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/23/"
+    ],
+    "vehicles": [],
+    "starships": [],
+    "created": "2014-12-20T10:29:11.661000Z",
+    "edited": "2014-12-20T21:17:50.432000Z",
+    "url": "http://swapi.co/api/people/55/"
+  },
+  {
+    "name": "Saesee Tiin",
+    "height": "188",
+    "hair_color": "none",
+    "skin_color": "pale",
+    "eye_color": "orange",
+    "gender": "male",
+    "homeworld": "http://swapi.co/api/planets/47/",
+    "films": [
+      "http://swapi.co/api/films/4/",
+      "http://swapi.co/api/films/6/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/24/"
+    ],
+    "vehicles": [],
+    "starships": [],
+    "created": "2014-12-20T10:32:11.669000Z",
+    "edited": "2014-12-20T21:17:50.434000Z",
+    "url": "http://swapi.co/api/people/56/"
+  },
+  {
+    "name": "Yarael Poof",
+    "height": "264",
+    "hair_color": "none",
+    "skin_color": "white",
+    "eye_color": "yellow",
+    "gender": "male",
+    "homeworld": "http://swapi.co/api/planets/48/",
+    "films": [
+      "http://swapi.co/api/films/4/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/25/"
+    ],
+    "vehicles": [],
+    "starships": [],
+    "created": "2014-12-20T10:34:48.725000Z",
+    "edited": "2014-12-20T21:17:50.437000Z",
+    "url": "http://swapi.co/api/people/57/"
+  },
+  {
+    "name": "Plo Koon",
+    "height": "188",
+    "mass": "80",
+    "hair_color": "none",
+    "skin_color": "orange",
+    "eye_color": "black",
+    "birth_year": "22BBY",
+    "gender": "male",
+    "homeworld": "http://swapi.co/api/planets/49/",
+    "films": [
+      "http://swapi.co/api/films/5/",
+      "http://swapi.co/api/films/4/",
+      "http://swapi.co/api/films/6/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/26/"
+    ],
+    "vehicles": [],
+    "starships": [
+      "http://swapi.co/api/starships/48/"
+    ],
+    "created": "2014-12-20T10:49:19.859000Z",
+    "edited": "2014-12-20T21:17:50.439000Z",
+    "url": "http://swapi.co/api/people/58/"
+  },
+  {
+    "name": "Mas Amedda",
+    "height": "196",
+    "hair_color": "none",
+    "skin_color": "blue",
+    "eye_color": "blue",
+    "gender": "male",
+    "homeworld": "http://swapi.co/api/planets/50/",
+    "films": [
+      "http://swapi.co/api/films/5/",
+      "http://swapi.co/api/films/4/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/27/"
+    ],
+    "vehicles": [],
+    "starships": [],
+    "created": "2014-12-20T10:53:26.457000Z",
+    "edited": "2014-12-20T21:17:50.442000Z",
+    "url": "http://swapi.co/api/people/59/"
+  },
+  {
+    "name": "Owen Lars",
+    "height": "178",
+    "mass": "120",
+    "hair_color": "brown, grey",
+    "skin_color": "light",
+    "eye_color": "blue",
+    "birth_year": "52BBY",
+    "gender": "male",
+    "homeworld": "http://swapi.co/api/planets/1/",
+    "films": [
+      "http://swapi.co/api/films/5/",
+      "http://swapi.co/api/films/6/",
+      "http://swapi.co/api/films/1/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/1/"
+    ],
+    "vehicles": [],
+    "starships": [],
+    "created": "2014-12-10T15:52:14.024000Z",
+    "edited": "2014-12-20T21:17:50.317000Z",
+    "url": "http://swapi.co/api/people/6/"
+  },
+  {
+    "name": "Gregar Typho",
+    "height": "185",
+    "mass": "85",
+    "hair_color": "black",
+    "skin_color": "dark",
+    "eye_color": "brown",
+    "gender": "male",
+    "homeworld": "http://swapi.co/api/planets/8/",
+    "films": [
+      "http://swapi.co/api/films/5/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/1/"
+    ],
+    "vehicles": [],
+    "starships": [
+      "http://swapi.co/api/starships/39/"
+    ],
+    "created": "2014-12-20T11:10:10.381000Z",
+    "edited": "2014-12-20T21:17:50.445000Z",
+    "url": "http://swapi.co/api/people/60/"
+  },
+  {
+    "name": "Cordé",
+    "height": "157",
+    "hair_color": "brown",
+    "skin_color": "light",
+    "eye_color": "brown",
+    "gender": "female",
+    "homeworld": "http://swapi.co/api/planets/8/",
+    "films": [
+      "http://swapi.co/api/films/5/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/1/"
+    ],
+    "vehicles": [],
+    "starships": [],
+    "created": "2014-12-20T11:11:39.630000Z",
+    "edited": "2014-12-20T21:17:50.449000Z",
+    "url": "http://swapi.co/api/people/61/"
+  },
+  {
+    "name": "Cliegg Lars",
+    "height": "183",
+    "hair_color": "brown",
+    "skin_color": "fair",
+    "eye_color": "blue",
+    "birth_year": "82BBY",
+    "gender": "male",
+    "homeworld": "http://swapi.co/api/planets/1/",
+    "films": [
+      "http://swapi.co/api/films/5/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/1/"
+    ],
+    "vehicles": [],
+    "starships": [],
+    "created": "2014-12-20T15:59:03.958000Z",
+    "edited": "2014-12-20T21:17:50.451000Z",
+    "url": "http://swapi.co/api/people/62/"
+  },
+  {
+    "name": "Poggle the Lesser",
+    "height": "183",
+    "mass": "80",
+    "hair_color": "none",
+    "skin_color": "green",
+    "eye_color": "yellow",
+    "gender": "male",
+    "homeworld": "http://swapi.co/api/planets/11/",
+    "films": [
+      "http://swapi.co/api/films/5/",
+      "http://swapi.co/api/films/6/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/28/"
+    ],
+    "vehicles": [],
+    "starships": [],
+    "created": "2014-12-20T16:40:43.977000Z",
+    "edited": "2014-12-20T21:17:50.453000Z",
+    "url": "http://swapi.co/api/people/63/"
+  },
+  {
+    "name": "Luminara Unduli",
+    "height": "170",
+    "mass": "56.2",
+    "hair_color": "black",
+    "skin_color": "yellow",
+    "eye_color": "blue",
+    "birth_year": "58BBY",
+    "gender": "female",
+    "homeworld": "http://swapi.co/api/planets/51/",
+    "films": [
+      "http://swapi.co/api/films/5/",
+      "http://swapi.co/api/films/6/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/29/"
+    ],
+    "vehicles": [],
+    "starships": [],
+    "created": "2014-12-20T16:45:53.668000Z",
+    "edited": "2014-12-20T21:17:50.455000Z",
+    "url": "http://swapi.co/api/people/64/"
+  },
+  {
+    "name": "Barriss Offee",
+    "height": "166",
+    "mass": "50",
+    "hair_color": "black",
+    "skin_color": "yellow",
+    "eye_color": "blue",
+    "birth_year": "40BBY",
+    "gender": "female",
+    "homeworld": "http://swapi.co/api/planets/51/",
+    "films": [
+      "http://swapi.co/api/films/5/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/29/"
+    ],
+    "vehicles": [],
+    "starships": [],
+    "created": "2014-12-20T16:46:40.440000Z",
+    "edited": "2014-12-20T21:17:50.457000Z",
+    "url": "http://swapi.co/api/people/65/"
+  },
+  {
+    "name": "Dormé",
+    "height": "165",
+    "hair_color": "brown",
+    "skin_color": "light",
+    "eye_color": "brown",
+    "gender": "female",
+    "homeworld": "http://swapi.co/api/planets/8/",
+    "films": [
+      "http://swapi.co/api/films/5/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/1/"
+    ],
+    "vehicles": [],
+    "starships": [],
+    "created": "2014-12-20T16:49:14.640000Z",
+    "edited": "2014-12-20T21:17:50.460000Z",
+    "url": "http://swapi.co/api/people/66/"
+  },
+  {
+    "name": "Dooku",
+    "height": "193",
+    "mass": "80",
+    "hair_color": "white",
+    "skin_color": "fair",
+    "eye_color": "brown",
+    "birth_year": "102BBY",
+    "gender": "male",
+    "homeworld": "http://swapi.co/api/planets/52/",
+    "films": [
+      "http://swapi.co/api/films/5/",
+      "http://swapi.co/api/films/6/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/1/"
+    ],
+    "vehicles": [
+      "http://swapi.co/api/vehicles/55/"
+    ],
+    "starships": [],
+    "created": "2014-12-20T16:52:14.726000Z",
+    "edited": "2014-12-20T21:17:50.462000Z",
+    "url": "http://swapi.co/api/people/67/",
+    "desc": [
+      "Count Dooku is a fictional character from the Star Wars franchise, appearing in Star Wars: Episode II – Attack of the Clones and Star Wars: Episode III – Revenge of the Sith (portrayed by Christopher Lee).[1] He was also voiced by Corey Burton in the animated series Star Wars: The Clone Wars and Star Wars: Clone Wars.",
+      "Once a respected Jedi Master, he falls to the dark side of the Force after the death of his former Padawan, Qui-Gon Jinn, and becomes Darth Sidious' second apprentice under the name Darth Tyranus. As the founder of the Confederacy of Independent Systems, he is instrumental in the Clone Wars. Dooku was trained by Yoda as a Padawan learner."
+    ]
+  },
+  {
+    "name": "Bail Prestor Organa",
+    "height": "191",
+    "hair_color": "black",
+    "skin_color": "tan",
+    "eye_color": "brown",
+    "birth_year": "67BBY",
+    "gender": "male",
+    "homeworld": "http://swapi.co/api/planets/2/",
+    "films": [
+      "http://swapi.co/api/films/5/",
+      "http://swapi.co/api/films/6/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/1/"
+    ],
+    "vehicles": [],
+    "starships": [],
+    "created": "2014-12-20T16:53:08.575000Z",
+    "edited": "2014-12-20T21:17:50.463000Z",
+    "url": "http://swapi.co/api/people/68/",
+    "desc": [
+      "Senator Bail Prestor Organa of Alderaan, is a fictional character in the Star Wars franchise, portrayed by actor Jimmy Smits in Attack of the Clones (2002), Revenge of the Sith (2005), and Rogue One (2016). He is the senator from the planet Alderaan, one of the founding members of the Rebel Alliance, and the adoptive father of Leia Organa, a main character in the franchise."
+    ]
+  },
+  {
+    "name": "Jango Fett",
+    "height": "183",
+    "mass": "79",
+    "hair_color": "black",
+    "skin_color": "tan",
+    "eye_color": "brown",
+    "birth_year": "66BBY",
+    "gender": "male",
+    "homeworld": "http://swapi.co/api/planets/53/",
+    "films": [
+      "http://swapi.co/api/films/5/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/1/"
+    ],
+    "vehicles": [],
+    "starships": [],
+    "created": "2014-12-20T16:54:41.620000Z",
+    "edited": "2014-12-20T21:17:50.465000Z",
+    "url": "http://swapi.co/api/people/69/",
+    "desc": [
+      "Jango Fett is a fictional character in the Star Wars franchise, created by George Lucas. He made his debut in the 2002 film Star Wars: Episode II – Attack of the Clones, where he was portrayed by actor Temuera Morrison.",
+      "In the context of the Star Wars universe, Jango Fett was regarded as the best mercenary in the galaxy during the final years of the Republic. A naturally skilled warrior, he was eventually chosen to serve as the genetic template for the Clone Army of the Galactic Republic. These clone soldiers were genetically modified to be predisposed toward unquestioning obedience to the chain of command, unlike their highly independent progenitor. Jango was also the \"father\" of unaltered clone Boba Fett, which he requested as part of his contract with the Kaminoans."
+    ]
+  },
+  {
+    "name": "Beru Whitesun lars",
+    "height": "165",
+    "mass": "75",
+    "hair_color": "brown",
+    "skin_color": "light",
+    "eye_color": "blue",
+    "birth_year": "47BBY",
+    "gender": "female",
+    "homeworld": "http://swapi.co/api/planets/1/",
+    "films": [
+      "http://swapi.co/api/films/5/",
+      "http://swapi.co/api/films/6/",
+      "http://swapi.co/api/films/1/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/1/"
+    ],
+    "vehicles": [],
+    "starships": [],
+    "created": "2014-12-10T15:53:41.121000Z",
+    "edited": "2014-12-20T21:17:50.319000Z",
+    "url": "http://swapi.co/api/people/7/"
+  },
+  {
+    "name": "Zam Wesell",
+    "height": "168",
+    "mass": "55",
+    "hair_color": "blonde",
+    "skin_color": "fair, green, yellow",
+    "eye_color": "yellow",
+    "gender": "female",
+    "homeworld": "http://swapi.co/api/planets/54/",
+    "films": [
+      "http://swapi.co/api/films/5/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/30/"
+    ],
+    "vehicles": [
+      "http://swapi.co/api/vehicles/45/"
+    ],
+    "starships": [],
+    "created": "2014-12-20T16:57:44.471000Z",
+    "edited": "2014-12-20T21:17:50.468000Z",
+    "url": "http://swapi.co/api/people/70/"
+  },
+  {
+    "name": "Dexter Jettster",
+    "height": "198",
+    "mass": "102",
+    "hair_color": "none",
+    "skin_color": "brown",
+    "eye_color": "yellow",
+    "gender": "male",
+    "homeworld": "http://swapi.co/api/planets/55/",
+    "films": [
+      "http://swapi.co/api/films/5/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/31/"
+    ],
+    "vehicles": [],
+    "starships": [],
+    "created": "2014-12-20T17:28:27.248000Z",
+    "edited": "2014-12-20T21:17:50.470000Z",
+    "url": "http://swapi.co/api/people/71/"
+  },
+  {
+    "name": "Lama Su",
+    "height": "229",
+    "mass": "88",
+    "hair_color": "none",
+    "skin_color": "grey",
+    "eye_color": "black",
+    "gender": "male",
+    "homeworld": "http://swapi.co/api/planets/10/",
+    "films": [
+      "http://swapi.co/api/films/5/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/32/"
+    ],
+    "vehicles": [],
+    "starships": [],
+    "created": "2014-12-20T17:30:50.416000Z",
+    "edited": "2014-12-20T21:17:50.473000Z",
+    "url": "http://swapi.co/api/people/72/"
+  },
+  {
+    "name": "Taun We",
+    "height": "213",
+    "hair_color": "none",
+    "skin_color": "grey",
+    "eye_color": "black",
+    "gender": "female",
+    "homeworld": "http://swapi.co/api/planets/10/",
+    "films": [
+      "http://swapi.co/api/films/5/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/32/"
+    ],
+    "vehicles": [],
+    "starships": [],
+    "created": "2014-12-20T17:31:21.195000Z",
+    "edited": "2014-12-20T21:17:50.474000Z",
+    "url": "http://swapi.co/api/people/73/"
+  },
+  {
+    "name": "Jocasta Nu",
+    "height": "167",
+    "hair_color": "white",
+    "skin_color": "fair",
+    "eye_color": "blue",
+    "gender": "female",
+    "homeworld": "http://swapi.co/api/planets/9/",
+    "films": [
+      "http://swapi.co/api/films/5/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/1/"
+    ],
+    "vehicles": [],
+    "starships": [],
+    "created": "2014-12-20T17:32:51.996000Z",
+    "edited": "2014-12-20T21:17:50.476000Z",
+    "url": "http://swapi.co/api/people/74/"
+  },
+  {
+    "name": "R4-P17",
+    "height": "96",
+    "hair_color": "none",
+    "skin_color": "silver, red",
+    "eye_color": "red, blue",
+    "gender": "female",
+    "homeworld": "http://swapi.co/api/planets/28/",
+    "films": [
+      "http://swapi.co/api/films/5/",
+      "http://swapi.co/api/films/6/"
+    ],
+    "species": [],
+    "vehicles": [],
+    "starships": [],
+    "created": "2014-12-20T17:43:36.409000Z",
+    "edited": "2014-12-20T21:17:50.478000Z",
+    "url": "http://swapi.co/api/people/75/"
+  },
+  {
+    "name": "Wat Tambor",
+    "height": "193",
+    "mass": "48",
+    "hair_color": "none",
+    "skin_color": "green, grey",
+    "gender": "male",
+    "homeworld": "http://swapi.co/api/planets/56/",
+    "films": [
+      "http://swapi.co/api/films/5/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/33/"
+    ],
+    "vehicles": [],
+    "starships": [],
+    "created": "2014-12-20T17:53:52.607000Z",
+    "edited": "2014-12-20T21:17:50.481000Z",
+    "url": "http://swapi.co/api/people/76/"
+  },
+  {
+    "name": "San Hill",
+    "height": "191",
+    "hair_color": "none",
+    "skin_color": "grey",
+    "eye_color": "gold",
+    "gender": "male",
+    "homeworld": "http://swapi.co/api/planets/57/",
+    "films": [
+      "http://swapi.co/api/films/5/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/34/"
+    ],
+    "vehicles": [],
+    "starships": [],
+    "created": "2014-12-20T17:58:17.049000Z",
+    "edited": "2014-12-20T21:17:50.484000Z",
+    "url": "http://swapi.co/api/people/77/"
+  },
+  {
+    "name": "Shaak Ti",
+    "height": "178",
+    "mass": "57",
+    "hair_color": "none",
+    "skin_color": "red, blue, white",
+    "eye_color": "black",
+    "gender": "female",
+    "homeworld": "http://swapi.co/api/planets/58/",
+    "films": [
+      "http://swapi.co/api/films/5/",
+      "http://swapi.co/api/films/6/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/35/"
+    ],
+    "vehicles": [],
+    "starships": [],
+    "created": "2014-12-20T18:44:01.103000Z",
+    "edited": "2014-12-20T21:17:50.486000Z",
+    "url": "http://swapi.co/api/people/78/"
+  },
+  {
+    "name": "Grievous",
+    "height": "216",
+    "mass": "159",
+    "hair_color": "none",
+    "skin_color": "brown, white",
+    "eye_color": "green, yellow",
+    "gender": "male",
+    "homeworld": "http://swapi.co/api/planets/59/",
+    "films": [
+      "http://swapi.co/api/films/6/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/36/"
+    ],
+    "vehicles": [
+      "http://swapi.co/api/vehicles/60/"
+    ],
+    "starships": [
+      "http://swapi.co/api/starships/74/"
+    ],
+    "created": "2014-12-20T19:43:53.348000Z",
+    "edited": "2014-12-20T21:17:50.488000Z",
+    "url": "http://swapi.co/api/people/79/",
+    "desc": [
+      "General Grievous is a fictional character in the Star Wars franchise. A former Kaleesh warlord named Qymaen jai Sheelal, he is the Supreme Commander of the Confederacy of Independent Systems during the Clone Wars against the Galactic Republic and is trained in all lightsaber combat forms to ensure the Jedi's destruction.",
+      "The character was originally introduced in 2004 in the animated series Star Wars: Clone Wars, before being part of the film Star Wars: Episode III – Revenge of the Sith."
+    ]
+  },
+  {
+    "name": "R5-D4",
+    "height": "97",
+    "mass": "32",
+    "skin_color": "white, red",
+    "eye_color": "red",
+    "homeworld": "http://swapi.co/api/planets/1/",
+    "films": [
+      "http://swapi.co/api/films/1/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/2/"
+    ],
+    "vehicles": [],
+    "starships": [],
+    "created": "2014-12-10T15:57:50.959000Z",
+    "edited": "2014-12-20T21:17:50.321000Z",
+    "url": "http://swapi.co/api/people/8/"
+  },
+  {
+    "name": "Tarfful",
+    "height": "234",
+    "mass": "136",
+    "hair_color": "brown",
+    "skin_color": "brown",
+    "eye_color": "blue",
+    "gender": "male",
+    "homeworld": "http://swapi.co/api/planets/14/",
+    "films": [
+      "http://swapi.co/api/films/6/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/3/"
+    ],
+    "vehicles": [],
+    "starships": [],
+    "created": "2014-12-20T19:46:34.209000Z",
+    "edited": "2014-12-20T21:17:50.491000Z",
+    "url": "http://swapi.co/api/people/80/"
+  },
+  {
+    "name": "Raymus Antilles",
+    "height": "188",
+    "mass": "79",
+    "hair_color": "brown",
+    "skin_color": "light",
+    "eye_color": "brown",
+    "gender": "male",
+    "homeworld": "http://swapi.co/api/planets/2/",
+    "films": [
+      "http://swapi.co/api/films/1/",
+      "http://swapi.co/api/films/6/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/1/"
+    ],
+    "vehicles": [],
+    "starships": [],
+    "created": "2014-12-20T19:49:35.583000Z",
+    "edited": "2014-12-20T21:17:50.493000Z",
+    "url": "http://swapi.co/api/people/81/"
+  },
+  {
+    "name": "Sly Moore",
+    "height": "178",
+    "mass": "48",
+    "hair_color": "none",
+    "skin_color": "pale",
+    "eye_color": "white",
+    "gender": "female",
+    "homeworld": "http://swapi.co/api/planets/60/",
+    "films": [
+      "http://swapi.co/api/films/5/",
+      "http://swapi.co/api/films/6/"
+    ],
+    "species": [],
+    "vehicles": [],
+    "starships": [],
+    "created": "2014-12-20T20:18:37.619000Z",
+    "edited": "2014-12-20T21:17:50.496000Z",
+    "url": "http://swapi.co/api/people/82/"
+  },
+  {
+    "name": "Tion Medon",
+    "height": "206",
+    "mass": "80",
+    "hair_color": "none",
+    "skin_color": "grey",
+    "eye_color": "black",
+    "gender": "male",
+    "homeworld": "http://swapi.co/api/planets/12/",
+    "films": [
+      "http://swapi.co/api/films/6/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/37/"
+    ],
+    "vehicles": [],
+    "starships": [],
+    "created": "2014-12-20T20:35:04.260000Z",
+    "edited": "2014-12-20T21:17:50.498000Z",
+    "url": "http://swapi.co/api/people/83/"
+  },
+  {
+    "name": "Finn",
+    "hair_color": "black",
+    "skin_color": "dark",
+    "eye_color": "dark",
+    "gender": "male",
+    "homeworld": "http://swapi.co/api/planets/28/",
+    "films": [
+      "http://swapi.co/api/films/7/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/1/"
+    ],
+    "vehicles": [],
+    "starships": [],
+    "created": "2015-04-17T06:52:40.793621Z",
+    "edited": "2015-04-17T06:52:40.793674Z",
+    "url": "http://swapi.co/api/people/84/",
+    "desc": [
+      "Finn, designation number FN-2187, is a fictional character in the Star Wars franchise. He first appeared in the 2015 film Star Wars: The Force Awakens in which he is a stormtrooper for the First Order who flees and turns against it after being shocked by their cruelty in his first combat mission. He is played by British actor John Boyega, who will reprise the role in Star Wars: The Last Jedi."
+    ]
+  },
+  {
+    "name": "Rey",
+    "hair_color": "brown",
+    "skin_color": "light",
+    "eye_color": "hazel",
+    "gender": "female",
+    "homeworld": "http://swapi.co/api/planets/28/",
+    "films": [
+      "http://swapi.co/api/films/7/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/1/"
+    ],
+    "vehicles": [],
+    "starships": [],
+    "created": "2015-04-17T06:54:01.495077Z",
+    "edited": "2015-04-17T06:54:01.495128Z",
+    "url": "http://swapi.co/api/people/85/"
+  },
+  {
+    "name": "Poe Dameron",
+    "hair_color": "brown",
+    "skin_color": "light",
+    "eye_color": "brown",
+    "gender": "male",
+    "homeworld": "http://swapi.co/api/planets/28/",
+    "films": [
+      "http://swapi.co/api/films/7/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/1/"
+    ],
+    "vehicles": [],
+    "starships": [
+      "http://swapi.co/api/starships/77/"
+    ],
+    "created": "2015-04-17T06:55:21.622786Z",
+    "edited": "2015-04-17T06:55:21.622835Z",
+    "url": "http://swapi.co/api/people/86/",
+    "desc": [
+      "Poe Dameron is a fictional character in the Star Wars franchise. Introduced in the 2015 film Star Wars: The Force Awakens, he is portrayed by Oscar Isaac. Poe is an X-wing fighter pilot for the Resistance who inadvertently brings renegade stormtrooper Finn (John Boyega) and Jakku scavenger Rey (Daisy Ridley) into the fight against—and eventually a victory over—the sinister First Order. He is featured in The Force Awakens media and merchandising as well as an eponymous comic book series, and will appear in the film's forthcoming sequel, Star Wars: The Last Jedi. Isaac and the character have received positive reviews, with Poe being compared to the characterization of Han Solo (Harrison Ford) in the original Star Wars film trilogy."
+    ]
+  },
+  {
+    "name": "BB8",
+    "hair_color": "none",
+    "skin_color": "none",
+    "eye_color": "black",
+    "gender": "none",
+    "homeworld": "http://swapi.co/api/planets/28/",
+    "films": [
+      "http://swapi.co/api/films/7/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/2/"
+    ],
+    "vehicles": [],
+    "starships": [],
+    "created": "2015-04-17T06:57:38.061346Z",
+    "edited": "2015-04-17T06:57:38.061453Z",
+    "url": "http://swapi.co/api/people/87/",
+    "desc": [
+      "BB-8 (or Beebee-Ate) is a droid character in the Star Wars franchise, first appearing in the 2015 film Star Wars: The Force Awakens. Spherical with a free-moving domed head, BB-8 is portrayed by both a rod puppet and a remote-controlled robotic unit."
+    ]
+  },
+  {
+    "name": "Captain Phasma",
+    "gender": "female",
+    "homeworld": "http://swapi.co/api/planets/28/",
+    "films": [
+      "http://swapi.co/api/films/7/"
+    ],
+    "species": [],
+    "vehicles": [],
+    "starships": [],
+    "created": "2015-10-13T10:35:39.229823Z",
+    "edited": "2015-10-13T10:35:39.229894Z",
+    "url": "http://swapi.co/api/people/88/",
+    "desc": [
+      "Captain Phasma is a fictional character in the Star Wars franchise, portrayed by Gwendoline Christie. Introduced in Star Wars: The Force Awakens (2015), the first film in the Star Wars sequel trilogy, Phasma is the commander of the First Order's force of stormtroopers. Christie confirmed that the character would reappear in the next of the trilogy's films, Star Wars: The Last Jedi. The character also made an additional appearance in Before the Awakening, an anthology book set before the events of The Force Awakens.",
+      "J. J. Abrams created Phasma from an armor design originally developed for Kylo Ren and named her after the 1979 horror film Phantasm. The character was originally conceived as male before being changed to female. Phasma appeared prominently in promotion and marketing for The Force Awakens, but the character's ultimately minor role in the film was the subject of criticism. Nonetheless, merchandise featuring the character found success and her figure was the bestselling of all Force Awakens action figures on Amazon.co.uk.[3]"
+    ]
+  },
+  {
+    "name": "Biggs Darklighter",
+    "height": "183",
+    "mass": "84",
+    "hair_color": "black",
+    "skin_color": "light",
+    "eye_color": "brown",
+    "birth_year": "24BBY",
+    "gender": "male",
+    "homeworld": "http://swapi.co/api/planets/1/",
+    "films": [
+      "http://swapi.co/api/films/1/"
+    ],
+    "species": [
+      "http://swapi.co/api/species/1/"
+    ],
+    "vehicles": [],
+    "starships": [
+      "http://swapi.co/api/starships/12/"
+    ],
+    "created": "2014-12-10T15:59:50.509000Z",
+    "edited": "2014-12-20T21:17:50.323000Z",
+    "url": "http://swapi.co/api/people/9/",
+    "desc": [
+      "Rogue Squadron is a starfighter squadron in the Star Wars franchise. Many surviving members of Red Squadron, the X-wing attack force that Luke Skywalker joins during the Battle of Yavin in Star Wars Episode IV: A New Hope (1977), later join Rogue Squadron. The squadron appears in The Empire Strikes Back (1980) as Rogue Group. In the 2016 film Rogue One, Rebel fighters on a suicide mission to steal the plans for the Death Star self-identify as \"Rogue One\", a possible precursor to Rogue Squadron.[1]",
+      "Rogue Squadron is prominently featured in the comic book series Star Wars: X-wing, the ten-volume novel series Star Wars: X-wing, and the video game series Star Wars: Rogue Squadron. The unit is depicted as consisting of \"the best pilots and the best fighters\".[2]"
+    ]
+  }
+]
