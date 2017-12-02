@@ -31,7 +31,29 @@ const Film = new GraphQLObjectType({
   }
 });
 
-// const Character = // ...
+const Character = new GraphQLObjectType({
+  name: 'Character',
+  description: 'A Star Wars character',
+  fields: {
+    name: { type: GraphQLString },
+    height: { type: GraphQLString },
+    mass: { type: GraphQLString },
+    hair_color: { type: GraphQLString },
+    skin_color: { type: GraphQLString },
+    eye_color: { type: GraphQLString },
+    birth_year: { type: GraphQLString },
+    gender: { type: GraphQLString },
+    homeworld: { type: GraphQLString },
+    films: { type: new GraphQLList(GraphQLString) },
+    species: { type: new GraphQLList(GraphQLString) },
+    vehicles: { type: new GraphQLList(GraphQLString) },
+    starships: { type: new GraphQLList(GraphQLString) },
+    created: { type: GraphQLString },
+    edited: { type: GraphQLString },
+    url: { type: GraphQLString },
+    desc: { type: new GraphQLList(GraphQLString) }
+  }
+});
 
 // TODO: define a schema with operations to
 // 1. get one film by id
@@ -48,6 +70,14 @@ const schema = new GraphQLSchema({
         resolve: (root, { filmId }, context) => {
           if (!filmId) throw new Error('A filmId needs to be provided to get a film!');
           return FILMS.find((film) => film.episode_id === filmId);
+        },
+      },
+      character: {
+        type: Character,
+        args: { name: { type: GraphQLString } },
+        resolve: (root, { name }, context) => {
+          if (!name) throw new Error('A name needs to be provided to get a character!');
+          return CHARACTERS.find((character) => character.name === name);
         },
       }
     }
