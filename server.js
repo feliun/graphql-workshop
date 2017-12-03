@@ -6,40 +6,24 @@ const { GraphQLSchema, GraphQLObjectType, GraphQLString, GraphQLInt, GraphQLList
 const createController = require('./lib/controller');
 
 const port = process.env.PORT || 8080;
+const app = express();
 const args = process.argv;
 const shouldMock = (args.length === 3 && args[2] === '--mock');
 const swapiMock = {
   get: (link) => ({ name:link })
 };
+const api = shouldMock ? swapiMock : swapi;
 
-const app = express();
+const vehiculeSchema = require('./models/vehicule/schema')();
+const vehiculeController = require('./models/vehicule/controller')({ swapi: api });
 
-// TODO this code will start getting messy very soon
-// each model specifies its own schema with its definition, its resolver(s) and its controller capabilities
-// The aim is to encapsulate this information and merge everything together in the main schema
+const schemas = {
+  vehicule: vehiculeSchema
+};
 
-const Vehicule = new GraphQLObjectType({
-  name: 'Vehicule',
-  description: 'A Star Wars vehicule description',
-  fields: {
-    name: { type: GraphQLString },
-    model: { type: GraphQLString },
-    manufacturer: { type: GraphQLString },
-    cost_in_credits: { type: GraphQLString },
-    length: { type: GraphQLString },
-    max_atmosphering_speed: { type: GraphQLString },
-    crew: { type: GraphQLString },
-    passengers: { type: GraphQLString },
-    cargo_capacity: { type: GraphQLString },
-    consumables: { type: GraphQLString },
-    vehicle_class: { type: GraphQLString },
-    pilots: { type: new GraphQLList(GraphQLString) } ,
-    films: { type: new GraphQLList(GraphQLString) },
-    created: { type: GraphQLString },
-    edited: { type: GraphQLString },
-    url: { type: GraphQLString }
-  }
-});
+const controllers = {
+  vehicule: vehiculeController
+};
 
 const Film = new GraphQLObjectType({
   name: 'Film',
@@ -55,8 +39,8 @@ const Film = new GraphQLObjectType({
     planets: { type: new GraphQLList(GraphQLString) },
     starships: { type: new GraphQLList(GraphQLString) },
     vehicles: {
-      type: new GraphQLList(Vehicule),
-      resolve: (root, args, context) => Promise.all(root.vehicles.map(context.controller.vehicule.getByLink))
+      type: new GraphQLList(schemas.vehicule),
+      resolve: (root, args, context) => Promise.all(root.vehicles.map(context.controllers.vehicule.getByLink))
     },
     species: { type: new GraphQLList(GraphQLString) },
     created: { type: GraphQLString },
@@ -82,8 +66,8 @@ const Character = new GraphQLObjectType({
     films: { type: new GraphQLList(GraphQLString) },
     species: { type: new GraphQLList(GraphQLString) },
     vehicles: {
-      type: new GraphQLList(Vehicule),
-      resolve: (root, args, context) => Promise.all(root.vehicles.map(context.controller.vehicule.getByLink))
+      type: new GraphQLList(schemas.vehicule),
+      resolve: (root, args, context) => Promise.all(root.vehicles.map(context.controllers.vehicule.getByLink))
     },
     starships: { type: new GraphQLList(GraphQLString) },
     created: { type: GraphQLString },
@@ -135,13 +119,12 @@ mongodb.connect('mongodb://127.0.0.1/starwars', options)
   .then((mongo) => {
     app.listen(port);
     console.log('Connected to mongo DB!');
-    const api = shouldMock ? swapiMock : swapi;
     const controller = createController(mongo, api);
     app.use(
       '/graphql',
       graphqlHTTP({
         schema,
-        context: { controller },
+        context: { controller, controllers },
         graphiql: true
       })
     );
