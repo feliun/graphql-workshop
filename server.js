@@ -1,12 +1,36 @@
 const express = require('express');
 const graphqlHTTP = require('express-graphql');
 const mongodb = require('mongodb');
+const swapi = require('swapi-node');
 const { GraphQLSchema, GraphQLObjectType, GraphQLString, GraphQLInt, GraphQLList } = require('graphql');
 const createController = require('./lib/controller');
 
 const port = process.env.PORT || 8080;
 
 const app = express();
+
+const Vehicule = new GraphQLObjectType({
+  name: 'Vehicule',
+  description: 'A Star Wars vehicule description',
+  fields: {
+    name: { type: GraphQLString },
+    model: { type: GraphQLString },
+    manufacturer: { type: GraphQLString },
+    cost_in_credits: { type: GraphQLString },
+    length: { type: GraphQLString },
+    max_atmosphering_speed: { type: GraphQLString },
+    crew: { type: GraphQLString },
+    passengers: { type: GraphQLString },
+    cargo_capacity: { type: GraphQLString },
+    consumables: { type: GraphQLString },
+    vehicle_class: { type: GraphQLString },
+    pilots: { type: new GraphQLList(GraphQLString) } ,
+    films: { type: new GraphQLList(GraphQLString) },
+    created: { type: GraphQLString },
+    edited: { type: GraphQLString },
+    url: { type: GraphQLString }
+  }
+});
 
 const Film = new GraphQLObjectType({
   name: 'Film',
@@ -21,7 +45,10 @@ const Film = new GraphQLObjectType({
     characters: { type: new GraphQLList(GraphQLString) },
     planets: { type: new GraphQLList(GraphQLString) },
     starships: { type: new GraphQLList(GraphQLString) },
-    vehicles: { type: new GraphQLList(GraphQLString) },
+    vehicles: {
+      type: new GraphQLList(Vehicule),
+      resolve: (root, args, context) => Promise.all(root.vehicles.map(context.controller.vehicule.getByLink))
+    },
     species: { type: new GraphQLList(GraphQLString) },
     created: { type: GraphQLString },
     edited: { type: GraphQLString },
@@ -45,7 +72,10 @@ const Character = new GraphQLObjectType({
     homeworld: { type: GraphQLString },
     films: { type: new GraphQLList(GraphQLString) },
     species: { type: new GraphQLList(GraphQLString) },
-    vehicles: { type: new GraphQLList(GraphQLString) },
+    vehicles: {
+      type: new GraphQLList(Vehicule),
+      resolve: (root, args, context) => Promise.all(root.vehicles.map(context.controller.vehicule.getByLink))
+    },
     starships: { type: new GraphQLList(GraphQLString) },
     created: { type: GraphQLString },
     edited: { type: GraphQLString },
@@ -96,7 +126,7 @@ mongodb.connect('mongodb://127.0.0.1/starwars', options)
   .then((mongo) => {
     app.listen(port);
     console.log('Connected to mongo DB!');
-    const controller = createController(mongo);
+    const controller = createController(mongo, swapi);
     app.use(
       '/graphql',
       graphqlHTTP({
