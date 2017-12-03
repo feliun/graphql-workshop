@@ -2,8 +2,7 @@ const express = require('express');
 const graphqlHTTP = require('express-graphql');
 const mongodb = require('mongodb');
 const swapi = require('swapi-node');
-const { GraphQLSchema, GraphQLObjectType, GraphQLString, GraphQLInt, GraphQLList } = require('graphql');
-const createController = require('./lib/controller');
+const { GraphQLSchema, GraphQLObjectType, GraphQLInt, GraphQLList } = require('graphql');
 
 const port = process.env.PORT || 8080;
 const app = express();
@@ -19,54 +18,19 @@ let controllers = {};
 
 const vehiculeSchema = require('./models/vehicule/schema')();
 const characterSchema = require('./models/character/schema')(schemas);
+const filmSchema = require('./models/film/schema')(schemas);
 
 schemas.vehicule = vehiculeSchema;
 schemas.character = characterSchema;
+schemas.film = filmSchema;
 
 const characterQuery = require('./models/character/query')(schemas);
-
-const Film = new GraphQLObjectType({
-  name: 'Film',
-  description: 'A Star Wars film',
-  fields: {
-    title: { type: GraphQLString },
-    episode_id: { type: GraphQLInt },
-    opening_crawl: { type: GraphQLString },
-    director: { type: GraphQLString },
-    producer: { type: GraphQLString },
-    release_date: { type: GraphQLString },
-    characters: { type: new GraphQLList(GraphQLString) },
-    planets: { type: new GraphQLList(GraphQLString) },
-    starships: { type: new GraphQLList(GraphQLString) },
-    vehicles: {
-      type: new GraphQLList(schemas.vehicule),
-      resolve: (root, args, context) => Promise.all(root.vehicles.map(context.controllers.vehicule.getByLink))
-    },
-    species: { type: new GraphQLList(GraphQLString) },
-    created: { type: GraphQLString },
-    edited: { type: GraphQLString },
-    url: { type: GraphQLString },
-    desc: { type: new GraphQLList(GraphQLString) }
-  }
-});
+const filmQuery = require('./models/film/query')(schemas);
 
 const schema = new GraphQLSchema({
   query: new GraphQLObjectType({
     name: 'Query',
-    fields: Object.assign({
-      films: {
-        type: new GraphQLList(Film),
-        resolve: (root, args, context) => context.controller.film.getAll()
-      },
-      film: {
-        type: Film,
-        args: { filmId: { type: GraphQLInt } },
-        resolve: (root, { filmId }, context) => {
-          if (!filmId) throw new Error('A filmId needs to be provided to get a film!');
-          return context.controller.film.getById(filmId);
-        },
-      },
-    }, characterQuery)
+    fields: Object.assign(filmQuery, characterQuery)
   })
 });
 
@@ -84,16 +48,17 @@ mongodb.connect('mongodb://127.0.0.1/starwars', options)
   .then((mongo) => {
     app.listen(port);
     console.log('Connected to mongo DB!');
-    const controller = createController(mongo, api);
     const vehiculeController = require('./models/vehicule/controller')({ swapi: api });
     const characterController = require('./models/character/controller')({ swapi: api, mongo });
+    const filmController = require('./models/film/controller')({ swapi: api, mongo });
     controllers.vehicule = vehiculeController;
     controllers.character = characterController;
+    controllers.film = filmController;
     app.use(
       '/graphql',
       graphqlHTTP({
         schema,
-        context: { controller, controllers },
+        context: { controllers },
         graphiql: true
       })
     );
