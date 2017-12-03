@@ -6,6 +6,11 @@ const { GraphQLSchema, GraphQLObjectType, GraphQLString, GraphQLInt, GraphQLList
 const createController = require('./lib/controller');
 
 const port = process.env.PORT || 8080;
+const args = process.argv;
+const shouldMock = (args.length === 3 && args[2] === '--mock');
+const swapiMock = {
+  get: (link) => ({ name:link })
+};
 
 const app = express();
 
@@ -126,7 +131,8 @@ mongodb.connect('mongodb://127.0.0.1/starwars', options)
   .then((mongo) => {
     app.listen(port);
     console.log('Connected to mongo DB!');
-    const controller = createController(mongo, swapi);
+    const api = shouldMock ? swapiMock : swapi;
+    const controller = createController(mongo, api);
     app.use(
       '/graphql',
       graphqlHTTP({

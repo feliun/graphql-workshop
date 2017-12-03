@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js",
+    "mock": "nodemon server.js --mock",
     "docker": "docker-compose --file docker-compose.yml up -d --force-recreate"
   },
   "author": "Felipe Polo <felipe.polo@gmail.com>",
