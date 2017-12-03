@@ -14,16 +14,16 @@ const swapiMock = {
 };
 const api = shouldMock ? swapiMock : swapi;
 
+let schemas = {};
+let controllers = {};
+
 const vehiculeSchema = require('./models/vehicule/schema')();
-const vehiculeController = require('./models/vehicule/controller')({ swapi: api });
+const characterSchema = require('./models/character/schema')(schemas);
 
-const schemas = {
-  vehicule: vehiculeSchema
-};
+schemas.vehicule = vehiculeSchema;
+schemas.character = characterSchema;
 
-const controllers = {
-  vehicule: vehiculeController
-};
+const characterQuery = require('./models/character/query')(schemas);
 
 const Film = new GraphQLObjectType({
   name: 'Film',
@@ -50,37 +50,10 @@ const Film = new GraphQLObjectType({
   }
 });
 
-const Character = new GraphQLObjectType({
-  name: 'Character',
-  description: 'A Star Wars character',
-  fields: {
-    name: { type: GraphQLString },
-    height: { type: GraphQLString },
-    mass: { type: GraphQLString },
-    hair_color: { type: GraphQLString },
-    skin_color: { type: GraphQLString },
-    eye_color: { type: GraphQLString },
-    birth_year: { type: GraphQLString },
-    gender: { type: GraphQLString },
-    homeworld: { type: GraphQLString },
-    films: { type: new GraphQLList(GraphQLString) },
-    species: { type: new GraphQLList(GraphQLString) },
-    vehicles: {
-      type: new GraphQLList(schemas.vehicule),
-      resolve: (root, args, context) => Promise.all(root.vehicles.map(context.controllers.vehicule.getByLink))
-    },
-    starships: { type: new GraphQLList(GraphQLString) },
-    created: { type: GraphQLString },
-    edited: { type: GraphQLString },
-    url: { type: GraphQLString },
-    desc: { type: new GraphQLList(GraphQLString) }
-  }
-});
-
 const schema = new GraphQLSchema({
   query: new GraphQLObjectType({
     name: 'Query',
-    fields: {
+    fields: Object.assign({
       films: {
         type: new GraphQLList(Film),
         resolve: (root, args, context) => context.controller.film.getAll()
@@ -93,15 +66,7 @@ const schema = new GraphQLSchema({
           return context.controller.film.getById(filmId);
         },
       },
-      character: {
-        type: Character,
-        args: { name: { type: GraphQLString } },
-        resolve: (root, { name }, context) => {
-          if (!name) throw new Error('A name needs to be provided to get a character!');
-          return context.controller.character.getByName(name);
-        },
-      }
-    }
+    }, characterQuery)
   })
 });
 
@@ -120,6 +85,10 @@ mongodb.connect('mongodb://127.0.0.1/starwars', options)
     app.listen(port);
     console.log('Connected to mongo DB!');
     const controller = createController(mongo, api);
+    const vehiculeController = require('./models/vehicule/controller')({ swapi: api });
+    const characterController = require('./models/character/controller')({ swapi: api, mongo });
+    controllers.vehicule = vehiculeController;
+    controllers.character = characterController;
     app.use(
       '/graphql',
       graphqlHTTP({
