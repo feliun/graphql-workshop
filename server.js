@@ -14,6 +14,10 @@ const swapiMock = {
 
 const app = express();
 
+// TODO this code will start getting messy very soon
+// each model specifies its own schema with its definition, its resolver(s) and its controller capabilities
+// The aim is to encapsulate this information and merge everything together in the main schema
+
 const Vehicule = new GraphQLObjectType({
   name: 'Vehicule',
   description: 'A Star Wars vehicule description',
