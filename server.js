@@ -1,8 +1,7 @@
 const express = require('express');
-const graphqlHTTP = require('express-graphql');
 const mongodb = require('mongodb');
 const swapi = require('swapi-node');
-const { GraphQLSchema, GraphQLObjectType, GraphQLInt, GraphQLList } = require('graphql');
+const initGraphQL = require('./initGraphQL');
 
 const port = process.env.PORT || 8080;
 const app = express();
@@ -12,27 +11,6 @@ const swapiMock = {
   get: (link) => ({ name:link })
 };
 const api = shouldMock ? swapiMock : swapi;
-
-let schemas = {};
-let controllers = {};
-
-const vehiculeSchema = require('./models/vehicule/schema')();
-const characterSchema = require('./models/character/schema')(schemas);
-const filmSchema = require('./models/film/schema')(schemas);
-
-schemas.vehicule = vehiculeSchema;
-schemas.character = characterSchema;
-schemas.film = filmSchema;
-
-const characterQuery = require('./models/character/query')(schemas);
-const filmQuery = require('./models/film/query')(schemas);
-
-const schema = new GraphQLSchema({
-  query: new GraphQLObjectType({
-    name: 'Query',
-    fields: Object.assign(filmQuery, characterQuery)
-  })
-});
 
 const options = {
   auth: {
@@ -48,20 +26,7 @@ mongodb.connect('mongodb://127.0.0.1/starwars', options)
   .then((mongo) => {
     app.listen(port);
     console.log('Connected to mongo DB!');
-    const vehiculeController = require('./models/vehicule/controller')({ swapi: api });
-    const characterController = require('./models/character/controller')({ swapi: api, mongo });
-    const filmController = require('./models/film/controller')({ swapi: api, mongo });
-    controllers.vehicule = vehiculeController;
-    controllers.character = characterController;
-    controllers.film = filmController;
-    app.use(
-      '/graphql',
-      graphqlHTTP({
-        schema,
-        context: { controllers },
-        graphiql: true
-      })
-    );
+    initGraphQL({ mongo, swapi: api })(app);
     console.log(`Server listening at localhost:${port}`);
   })
   .catch(console.error);
