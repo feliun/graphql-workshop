@@ -13,7 +13,13 @@ module.exports = ({ mongo, swapi }) => (app) => {
   });
 
   const queryOps = models.reduce((total, model) => {
-    return Object.assign(total, require(`./models/${model}/query`)(schemas));
+    let currentQuery = {};
+    try {
+      currentQuery = require(`./models/${model}/query`)(schemas);
+    } catch (err) {
+      console.warn(`WARN!: Query operations not defined for model ${model}`);
+    }
+    return Object.assign(total, currentQuery);
   }, {});
 
   const schema = new GraphQLSchema({
