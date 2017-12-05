@@ -13,6 +13,8 @@ const swapiMock = {
 };
 const api = shouldMock ? swapiMock : swapi;
 
+// TODO let's test queries/mutations with graphQL!
+
 const options = {
   auth: {
     user: process.env.MONGO_DB_APP_USERNAME || 'node',
