@@ -22,10 +22,6 @@ const options = {
   socketTimeoutMS: 0
 };
 
-// TODO let´s add some MUTATIONS to store inputs in mongo
-// and to amend / delete data from inputs
-// let´s learn about mandatory fields as well
-
 mongodb.connect('mongodb://127.0.0.1/starwars', options)
   .then((mongo) => {
     app.listen(port);

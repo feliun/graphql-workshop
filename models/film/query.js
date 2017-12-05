@@ -1,4 +1,4 @@
-const { GraphQLList, GraphQLInt } = require('graphql');
+const { GraphQLList, GraphQLInt, GraphQLNonNull } = require('graphql');
 
 module.exports = (schemas) => ({
   films: {
@@ -7,10 +7,7 @@ module.exports = (schemas) => ({
   },
   film: {
     type: schemas.film,
-    args: { filmId: { type: GraphQLInt } },
-    resolve: (root, { filmId }, context) => {
-      if (!filmId) throw new Error('A filmId needs to be provided to get a film!');
-      return context.controllers.film.getById(filmId);
-    },
+    args: { filmId: { type: new GraphQLNonNull(GraphQLInt) } },
+    resolve: (root, { filmId }, context) => context.controllers.film.getById(filmId)
   },
 });

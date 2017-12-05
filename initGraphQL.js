@@ -22,10 +22,24 @@ module.exports = ({ mongo, swapi }) => (app) => {
     return Object.assign(total, currentQuery);
   }, {});
 
+  const mutationOps = models.reduce((total, model) => {
+    let currentMutation = {};
+    try {
+      currentMutation = require(`./models/${model}/mutation`)(schemas);
+    } catch (err) {
+      console.warn(`WARN!: Mutation operations not defined for model ${model}`);
+    }
+    return Object.assign(total, currentMutation);
+  }, {});
+
   const schema = new GraphQLSchema({
     query: new GraphQLObjectType({
       name: 'Query',
       fields: queryOps
+    }),
+    mutation: new GraphQLObjectType({
+      name: 'Mutation',
+      fields: mutationOps
     })
   });
 

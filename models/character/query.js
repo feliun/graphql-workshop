@@ -1,14 +1,11 @@
-const { GraphQLString } = require('graphql');
+const { GraphQLString, GraphQLNonNull } = require('graphql');
 
 module.exports = (schemas) => ({
   character: {
     type: schemas.character,
     args: {
-      name: { type: GraphQLString } 
+      name: { type: new GraphQLNonNull(GraphQLString) }
     },
-    resolve: (root, { name }, context) => {
-      if (!name) throw new Error('A name needs to be provided to get a character!');
-      return context.controllers.character.getByName(name);
-    }
+    resolve: (root, { name }, context) => context.controllers.character.getByName(name)
   }
 });
