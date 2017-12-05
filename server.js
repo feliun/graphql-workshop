@@ -22,6 +22,9 @@ const options = {
   socketTimeoutMS: 0
 };
 
+// TODO build a second endpoint to serve a schema
+// with the simple graphQL format
+
 mongodb.connect('mongodb://127.0.0.1/starwars', options)
   .then((mongo) => {
     app.listen(port);
