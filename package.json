@@ -16,7 +16,9 @@
     "express": "^4.16.1",
     "express-graphql": "^0.6.11",
     "graphql": "^0.11.6",
+    "graphql-server-express": "^1.2.0",
     "graphql-tools": "^1.2.3",
+    "merge-graphql-schemas": "^1.4.0",
     "mongodb": "^2.2.33",
     "swapi-node": "^0.4.3"
   },

@@ -2,6 +2,7 @@ const express = require('express');
 const mongodb = require('mongodb');
 const swapi = require('swapi-node');
 const initGraphQL = require('./initGraphQL');
+const initLeanGraphQL = require('./initLeanGraphQL');
 
 const port = process.env.PORT || 8080;
 const app = express();
@@ -22,14 +23,12 @@ const options = {
   socketTimeoutMS: 0
 };
 
-// TODO build a second endpoint to serve a schema
-// with the simple graphQL format
-
 mongodb.connect('mongodb://127.0.0.1/starwars', options)
   .then((mongo) => {
     app.listen(port);
     console.log('Connected to mongo DB!');
     initGraphQL({ mongo, swapi: api })(app);
+    initLeanGraphQL()(app);
     console.log(`Server listening at localhost:${port}`);
   })
   .catch(console.error);
