@@ -5,7 +5,9 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
+    "test": "NODE_ENV=test mocha --reporter spec './test/**/*.test.js'",
     "dev": "nodemon server.js",
+    "mock": "nodemon server.js --mock",
     "docker": "docker-compose --file docker-compose.yml up -d --force-recreate"
   },
   "author": "Felipe Polo <felipe.polo@gmail.com>",
@@ -15,11 +17,16 @@
     "express": "^4.16.1",
     "express-graphql": "^0.6.11",
     "graphql": "^0.11.6",
+    "graphql-request": "^1.4.0",
+    "graphql-server-express": "^1.2.0",
     "graphql-tools": "^1.2.3",
+    "merge-graphql-schemas": "^1.4.0",
     "mongodb": "^2.2.33",
     "swapi-node": "^0.4.3"
   },
   "devDependencies": {
+    "expect.js": "^0.3.1",
+    "mocha": "^4.0.1",
     "nodemon": "^1.12.1"
   }
 }
