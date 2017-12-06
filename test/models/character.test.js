@@ -2,8 +2,8 @@ const express = require('express');
 const mongodb = require('mongodb');
 const { request } = require('graphql-request');
 const expect = require('expect.js');
-const initSystem = require('../system');
-const vehicles = require('../mongo/vehicles.json');
+const initSystem = require('../../system');
+const vehicles = require('../../mongo/vehicles.json');
 
 const app = express();
 let mockSwapiResponse = [];
