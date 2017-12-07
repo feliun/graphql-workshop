@@ -1,0 +1,17 @@
+type Film {
+  title: String
+  episode_id: Int
+  opening_crawl: String
+  director: String
+  producer: String
+  release_date: String
+  characters: [String]
+  planets: [String]
+  starships: [String]
+  vehicles: [Vehicle]
+  species: [String]
+  created: String
+  edited: String
+  url: String
+  desc: [String]
+}

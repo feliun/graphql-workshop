@@ -1,5 +1,7 @@
 type Query {
   character(name: String!): Character
+  films: [Film]
+  film(episode_id: Int!): Film
 }
 
 type Mutation {
