@@ -5,7 +5,7 @@ type Query {
 }
 
 type Mutation {
-  addCharacter(input: InputCharacter!): Character
-  updateCharacter(input: InputCharacter!): Character
-  deleteCharacter(input: InputCharacter!): Character
+  addCharacter(input: InputCharacter): Character
+  updateCharacter(input: InputCharacter): Character
+  deleteCharacter(name: String!): Character
 }

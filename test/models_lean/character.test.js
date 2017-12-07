@@ -30,7 +30,7 @@ const config = {
 };
 
 let charactersCollection;
-const url = `http://localhost:${config.app.port}/graphql`;
+const url = `http://localhost:${config.app.port}/leangraphql`;
 const system = initSystem({ mongodb, app, swapi: swapiStub, config });
 const TEST_CHARACTER = 'Felipe Polo';
 
@@ -90,7 +90,7 @@ describe('Character Queries / Mutations', () => {
 
   const removeCharacter = (name) => {
     const baseQuery = `
-      mutation ($name: String) {
+      mutation ($name: String!) {
         deleteCharacter(name: $name) {
           name
         }
@@ -147,7 +147,7 @@ describe('Character Queries / Mutations', () => {
       .then(({ addCharacter }) => {
         expect(addCharacter.name).to.equal(TEST_CHARACTER);
         expect(addCharacter.gender).to.equal('male');
-      })
+      });
   });
 
   it('removes a character', () => {
