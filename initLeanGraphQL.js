@@ -8,20 +8,29 @@ const makeExecutableSchema = require('graphql-tools').makeExecutableSchema;
 
 const vehicles = require('./mongo/vehicles.json');
 
-module.exports = () => (app) => {
+module.exports = ({ mongo, swapi }) => (app) => {
 
   const modelsPath = join(__dirname, 'models_lean');
+  const toFilePath = (file) => (model) => join(__dirname, 'models_lean', model, file);
   const models = readdirSync(modelsPath);
-  const getDefinitionPath = (model) => join(__dirname, 'models_lean', model, 'definition.graphql');
 
-  const composeDefinitions = R.pipe(
-    R.map(getDefinitionPath),
+  const mergeControllers = R.pipe(
+    R.map(toFilePath('controller.js')),
+    R.filter(existsSync),
+    R.map(require),
+    R.map(R.applyTo({ mongo, swapi })),
+    R.reduce(R.merge, {})
+  );
+
+  const buildDefinitions = R.pipe(
+    R.map(toFilePath('definition.graphql')),
     R.filter(existsSync),
     R.map(R.flip(R.curry(readFileSync))('utf-8')),
     R.reduce(R.concat, '')
   );
 
-  const typeDefs = composeDefinitions(models);
+  const typeDefs = buildDefinitions(models);
+  const controllers = mergeControllers(models);
 
   const resolvers = {
     Query: {
@@ -42,7 +51,8 @@ module.exports = () => (app) => {
     '/leangraphql',
     graphqlHTTP({
       schema,
-      graphiql: true
+      graphiql: true,
+      context: { controllers }
     })
   );
 };

@@ -13,7 +13,7 @@ module.exports = ({ mongodb, app, swapi, config }) => {
         mongoInstance = mongo;
         console.log('Connected to mongo DB!');
         initGraphQL({ mongo, swapi })(app);
-        initLeanGraphQL()(app);
+        initLeanGraphQL({ mongo, swapi })(app);
         return { mongo, app };
       });
 
