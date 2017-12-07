@@ -1,47 +1,27 @@
+const R = require('ramda');
 const express = require('express');
+const { promisify } = require('util');
+const { readdirSync, readFileSync, existsSync } = require('fs');
+const { join } = require('path');
 const graphqlHTTP = require('express-graphql');
-const gql = require('graphql');
 const makeExecutableSchema = require('graphql-tools').makeExecutableSchema;
 
 const vehicles = require('./mongo/vehicles.json');
 
 module.exports = () => (app) => {
 
-  const typeDefs = `
-    type Vehicle {
-      name: String
-      model: String
-      manufacturer: String
-      cost_in_credits: String
-      length: String
-      max_atmosphering_speed: String
-      crew: String
-      passengers: String
-      cargo_capacity: String
-      consumables: String
-      vehicle_class: String
-      pilots: [String]
-      films: [String]
-      created: String
-      edited: String
-      url: String
-    }
+  const modelsPath = join(__dirname, 'models_lean');
+  const models = readdirSync(modelsPath);
+  const getDefinitionPath = (model) => join(__dirname, 'models_lean', model, 'definition.graphql');
 
-    input VehicleInput {
-      name: String!
-      model: String
-      manufacturer: String
-    }
+  const composeDefinitions = R.pipe(
+    R.map(getDefinitionPath),
+    R.filter(existsSync),
+    R.map(R.flip(R.curry(readFileSync))('utf-8')),
+    R.reduce(R.concat, '')
+  );
 
-    type Query {
-      vehicles: [Vehicle]
-      vehicle(name: String!): Vehicle
-    }
-
-    type Mutation {
-      createVehicle(input: VehicleInput): Vehicle
-    }
-  `;
+  const typeDefs = composeDefinitions(models);
 
   const resolvers = {
     Query: {

@@ -22,6 +22,7 @@
     "graphql-tools": "^1.2.3",
     "merge-graphql-schemas": "^1.4.0",
     "mongodb": "^2.2.33",
+    "ramda": "^0.25.0",
     "swapi-node": "^0.4.3"
   },
   "devDependencies": {

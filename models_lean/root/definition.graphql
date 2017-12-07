@@ -1,0 +1,8 @@
+type Query {
+  vehicles: [Vehicle]
+  vehicle(name: String!): Vehicle
+}
+
+type Mutation {
+  createVehicle(input: VehicleInput): Vehicle
+}
