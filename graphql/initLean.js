@@ -6,8 +6,6 @@ const { join } = require('path');
 const graphqlHTTP = require('express-graphql');
 const makeExecutableSchema = require('graphql-tools').makeExecutableSchema;
 
-const vehicles = require('./mongo/vehicles.json');
-
 module.exports = ({ mongo, swapi }) => (app) => {
 
   const modelsPath = join(__dirname, 'models_lean');

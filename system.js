@@ -1,5 +1,5 @@
-const initGraphQL = require('./initGraphQL');
-const initLeanGraphQL = require('./initLeanGraphQL');
+const initGraphQL = require('./graphql/init');
+const initLeanGraphQL = require('./graphql/initLean');
 
 module.exports = ({ mongodb, app, swapi, config }) => {
 
