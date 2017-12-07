@@ -28,7 +28,7 @@ mongodb.connect('mongodb://127.0.0.1/starwars', options)
     app.listen(port);
     console.log('Connected to mongo DB!');
     initGraphQL({ mongo, swapi: api })(app);
-    initLeanGraphQL()(app);
+    initLeanGraphQL({ mongo, swapi: api })(app);
     console.log(`Server listening at localhost:${port}`);
   })
   .catch(console.error);

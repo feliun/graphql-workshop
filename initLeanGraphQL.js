@@ -1,13 +1,43 @@
 const express = require('express');
 const graphqlHTTP = require('express-graphql');
-const gql = require('graphql');
+const { readdirSync } = require('fs');
+const { join } = require('path');
 const makeExecutableSchema = require('graphql-tools').makeExecutableSchema;
+
+const models = readdirSync(join(__dirname, 'models'));
 
 const vehicles = require('./mongo/vehicles.json');
 
-module.exports = () => (app) => {
+module.exports = ({ swapi, mongo }) => (app) => {
+
+  const controllers = models.reduce((total, model) => {
+    return Object.assign(total, {
+      [model]: require(`./models/${model}/controller`)({ swapi, mongo })
+    });
+  }, {});
 
   const typeDefs = `
+    
+    type Character {
+      name: String
+      height: String
+      mass: String
+      hair_color: String
+      skin_color: String
+      eye_color: String
+      birth_year: String
+      gender: String
+      homeworld: String
+      films: [String]
+      species: [String]
+      vehicles: [Vehicle]
+      starships: [String]
+      created: String
+      edited: String
+      url: String
+      desc: [String]
+    }
+
     type Vehicle {
       name: String
       model: String
@@ -34,8 +64,7 @@ module.exports = () => (app) => {
     }
 
     type Query {
-      vehicles: [Vehicle]
-      vehicle(name: String!): Vehicle
+      character(name: String!): Character
     }
 
     type Mutation {
@@ -45,14 +74,16 @@ module.exports = () => (app) => {
 
   const resolvers = {
     Query: {
-      vehicles: () => vehicles,
-      vehicle: (_, { name: targetName }, context) => vehicles.find(({ name }) => name === targetName)
+      character: (root, { name }, context) => context.controllers.character.getByName(name)
     },
     Mutation: {
       createVehicle: (_, { input }) => {
         vehicles.push(input);
         return input;
       }
+    },
+    Character: {
+      vehicles: () => vehicles,
     }
   };
 
@@ -62,7 +93,8 @@ module.exports = () => (app) => {
     '/leangraphql',
     graphqlHTTP({
       schema,
-      graphiql: true
+      graphiql: true,
+      context: { controllers }
     })
   );
 };
