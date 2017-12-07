@@ -1,8 +1,9 @@
 type Query {
-  vehicles: [Vehicle]
-  vehicle(name: String!): Vehicle
+  character(name: String!): Character
 }
 
 type Mutation {
-  createVehicle(input: VehicleInput): Vehicle
+  addCharacter(input: InputCharacter!): Character
+  updateCharacter(input: InputCharacter!): Character
+  deleteCharacter(input: InputCharacter!): Character
 }

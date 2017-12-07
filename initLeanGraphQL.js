@@ -14,6 +14,13 @@ module.exports = ({ mongo, swapi }) => (app) => {
   const toFilePath = (file) => (model) => join(__dirname, 'models_lean', model, file);
   const models = readdirSync(modelsPath);
 
+  const buildDefinitions = R.pipe(
+    R.map(toFilePath('definition.graphql')),
+    R.filter(existsSync),
+    R.map(R.flip(R.curry(readFileSync))('utf-8')),
+    R.reduce(R.concat, '')
+  );
+
   const mergeControllers = R.pipe(
     R.map(toFilePath('controller.js')),
     R.filter(existsSync),
@@ -22,27 +29,28 @@ module.exports = ({ mongo, swapi }) => (app) => {
     R.reduce(R.merge, {})
   );
 
-  const buildDefinitions = R.pipe(
-    R.map(toFilePath('definition.graphql')),
+  const mergeQueries = R.pipe(
+    R.map(toFilePath('query.js')),
     R.filter(existsSync),
-    R.map(R.flip(R.curry(readFileSync))('utf-8')),
-    R.reduce(R.concat, '')
+    R.map(require),
+    R.reduce(R.merge, {})
+  );
+
+  const mergeMutations = R.pipe(
+    R.map(toFilePath('mutation.js')),
+    R.filter(existsSync),
+    R.map(require),
+    R.reduce(R.merge, {})
   );
 
   const typeDefs = buildDefinitions(models);
   const controllers = mergeControllers(models);
+  const queries = mergeQueries(models);
+  const mutations = mergeMutations(models);
 
   const resolvers = {
-    Query: {
-      vehicles: () => vehicles,
-      vehicle: (_, { name: targetName }, context) => vehicles.find(({ name }) => name === targetName)
-    },
-    Mutation: {
-      createVehicle: (_, { input }) => {
-        vehicles.push(input);
-        return input;
-      }
-    }
+    Query: queries,
+    Mutation: mutations
   };
 
   const schema = makeExecutableSchema({ typeDefs, resolvers });
