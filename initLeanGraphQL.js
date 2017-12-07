@@ -29,29 +29,28 @@ module.exports = ({ mongo, swapi }) => (app) => {
     R.reduce(R.merge, {})
   );
 
-  const mergeQueries = R.pipe(
-    R.map(toFilePath('query.js')),
-    R.filter(existsSync),
-    R.map(require),
-    R.reduce(R.merge, {})
-  );
+  const mergeResolvers = (resolverFile) =>
+    R.pipe(
+      R.map(toFilePath(resolverFile)),
+      R.filter(existsSync),
+      R.map(require),
+      R.reduce(R.merge, {})
+    );
 
-  const mergeMutations = R.pipe(
-    R.map(toFilePath('mutation.js')),
-    R.filter(existsSync),
-    R.map(require),
-    R.reduce(R.merge, {})
-  );
+  const mergeQueries = mergeResolvers('query.js');
+  const mergeMutations = mergeResolvers('mutation.js');
+  const mergeCustomResolvers = mergeResolvers('resolver.js');
 
   const typeDefs = buildDefinitions(models);
   const controllers = mergeControllers(models);
   const queries = mergeQueries(models);
   const mutations = mergeMutations(models);
+  const customResolvers = mergeCustomResolvers(models);
 
-  const resolvers = {
+  const resolvers = R.merge({
     Query: queries,
     Mutation: mutations
-  };
+  }, customResolvers);
 
   const schema = makeExecutableSchema({ typeDefs, resolvers });
   
