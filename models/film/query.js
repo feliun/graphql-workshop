@@ -7,7 +7,7 @@ module.exports = (schemas) => ({
   },
   film: {
     type: schemas.film,
-    args: { filmId: { type: new GraphQLNonNull(GraphQLInt) } },
-    resolve: (root, { filmId }, context) => context.controllers.film.getById(filmId)
+    args: { episode_id: { type: new GraphQLNonNull(GraphQLInt) } },
+    resolve: (root, { episode_id }, context) => context.controllers.film.getById(episode_id)
   },
 });

@@ -1,3 +1,4 @@
+const R = require('ramda');
 const express = require('express');
 const mongodb = require('mongodb');
 const { request } = require('graphql-request');
@@ -45,7 +46,7 @@ describe('Film Queries', () => {
   it('queries a single film with few fields', () => {
     const baseQuery = `
       query {
-        film(filmId: 5) {
+        film(episode_id: 5) {
           director
           title
         }
