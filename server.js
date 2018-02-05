@@ -7,7 +7,7 @@ const port = process.env.PORT || 8080;
 const app = express();
 
 const moto = 'May the force be with you';
-const motoAsObject = { moto };
+const character = { name: "Luke Skywalker" };
 
 const schema = new GraphQLSchema({
   // query operations defined
@@ -15,9 +15,9 @@ const schema = new GraphQLSchema({
     name: 'Query',
     fields: {
       // define here a 'moto' operation which will return the moto as a string
-      moto: { },
+      mainMoto: { },
       // define here a 'motoAsObject' operation which will return motoAsObject
-      motoAsObject: { }
+      mainCharacter: { }
     }
   })
 });
