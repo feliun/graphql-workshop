@@ -9,17 +9,55 @@ const app = express();
 
 const typeDefs = `
   type Query {
-    sample: A
+    character(name: String!): Character
+    films:[Film]
+    film(episode_id: Int!): Film
   }
 
-  type A {
-    x: String
+  type Film {
+    title: String
+    episode_id: Int
+    opening_crawl: String
+    director: String
+    producer: String
+    release_date: String
+    characters: [String]
+    planets: [String]
+    starships: [String]
+    vehicles: [String]
+    species: [String]
+    created: String
+    edited: String
+    url: String
+    desc: [String]
+  }
+
+  type Character {
+    name: String
+    height: String
+    mass: String
+    hair_color: String
+    skin_color: String
+    eye_color: String
+    birth_year: String
+    gender: String
+    homeworld: String
+    films: [String]
+    species: [String]
+    vehicles: [String]
+    starships: [String]
+    created: String
+    edited: String
+    url: String
+    desc: [String]
   }
 `;
 
 const resolvers = {
   Query: {
-    sample: (root, args, context) => ({ x: "a simpler way to define graphqQL!" })
+    character: (root, { name }, context) => context.mongo.collection('characters').findOne({ name }),
+    films: (root, args, context) => context.mongo.collection('films').find({}).toArray(),
+    film: (root, { episode_id }, context) => context.mongo.collection('films').findOne({ episode_id })
   }
 };
 
