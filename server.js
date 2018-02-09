@@ -14,6 +14,12 @@ const typeDefs = `
     film(episode_id: Int!): Film
   }
 
+  type Mutation {
+    addCharacter(input: InputCharacter): Character
+    updateCharacter(input: InputCharacter): Character
+    deleteCharacter(name: String!): Character
+  }
+
   type Film {
     title: String
     episode_id: Int
@@ -51,6 +57,21 @@ const typeDefs = `
     url: String
     desc: [String]
   }
+
+  input InputCharacter {
+    name: String!
+    gender: String
+    height: String
+    mass: String
+    hair_color: String
+    skin_color: String
+    eye_color: String
+    birth_year: String
+    homeworld: String
+    created: String
+    edited: String
+    url: String
+  }
 `;
 
 const resolvers = {
@@ -58,6 +79,14 @@ const resolvers = {
     character: (root, { name }, context) => context.mongo.collection('characters').findOne({ name }),
     films: (root, args, context) => context.mongo.collection('films').find({}).toArray(),
     film: (root, { episode_id }, context) => context.mongo.collection('films').findOne({ episode_id })
+  },
+  Mutation: {
+    addCharacter: (root, { input }, context) => context.mongo.collection('characters').insertOne(input).then(({ ops }) => ops && ops[0]),
+    updateCharacter: (root, { input }, context) =>
+      context.mongo.collection('characters')
+      .findOneAndUpdate({ name: input.name }, input, { returnNewDocument: true })
+      .then((res) => res.value),
+    deleteCharacter: (root, args, context) => context.mongo.collection('characters').deleteOne(args)
   }
 };
 
