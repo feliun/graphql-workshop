@@ -1,25 +1,29 @@
 const express = require('express');
-const graphqlHTTP = require('express-graphql');
 const mongodb = require('mongodb');
-const { GraphQLSchema, GraphQLObjectType, GraphQLString, GraphQLInt, GraphQLList } = require('graphql');
+const graphqlHTTP = require('express-graphql');
+const { makeExecutableSchema } = require('graphql-tools');
 
 const port = process.env.PORT || 8080;
 
 const app = express();
 
-const Film = //...
+const typeDefs = `
+  type Query {
+    sample: A
+  }
 
-const Character = //...
+  type A {
+    x: String
+  }
+`;
 
-const schema = new GraphQLSchema({
-  query: new GraphQLObjectType({
-    name: 'Query',
-    fields: {
+const resolvers = {
+  Query: {
+    sample: (root, args, context) => ({ x: "a simpler way to define graphqQL!" })
+  }
+};
 
-    }
-  })
-});
-
+const schema = makeExecutableSchema({ typeDefs, resolvers });
 
 const options = {
   auth: {
