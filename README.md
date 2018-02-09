@@ -1,6 +1,8 @@
 # graphql-workshop
 
-**TODO:** define a schema with operations to
-1. get one film by id
-2. get a character by name
-3. get all films
+**TODO:** define mutations to
+1. add
+2. update
+3. delete
+
+a Star Wars character
